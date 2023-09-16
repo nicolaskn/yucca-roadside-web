@@ -1,0 +1,493 @@
+body{
+	direction: rtl;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right;
+}
+.slick-slider {
+	direction: ltr;
+}
+.autotowing-strip-info li,.autotowing-strip-info li i,.autotowing-shadule i,.autotowing-promo-box-wrap figure figcaption p,.autotowing-services-list a,
+.autotowing-testimonial figure,.star-rating,.autotowing-blog-medium figure,.autotowing-service-coupon h2,.autotowing-footer-services-text i,
+.widget_contact_us ul li i,.widget_appointment ul li input[type="submit"],.autotowing-subheader p,.autotowing-breadcrumb ul > li,.widget_popular_post figure,
+.autotowing-counter > ul > li,.autotowing-related-option li,.widget_popular_post .autotowing-blog-option,.autotowing-blog-option li,.comment-list li figure,
+.autotowing-thumb-heading h2,.autotowing-tags,.autotowing-tags span,.autotowing-tags a,.autotowing-admin-post figure,.autotowing-admin-social li,
+.comment-list li figure img,.comment-reply-link,.text-holder .post-date,.comment-respond form p,.comment-respond form p input[type="submit"],
+.autotowing-gridtwo-social li,.autotowing-blog-large-text time,.autotowing-blog-post-comment li,.autotowing-contact-info-two i,.autotowing-modern-btn,
+.autotowing-contact-form ul li,.autotowing-countdown .countdown-section,.autotowing-coomingsoon form,.autotowing-coomingsoon-social li,
+.autotowing-services-form ul li,.autotowing-services-form input[type="submit"],.autotowing-services-modern i { 
+	float: right; 
+}
+.autotowing-strip-info li.right,.autotowing-appointment-btn,.autotowing-fancy-btn,.autotowing-promo-box-btn,.autotowing-claim-btn,blockquote span,
+.autotowing-breadcrumb,.col-md-4.right,.widget_cetagories ul li a span,.autotowing-blog-option,.autotowing-blog-social ul,.comment-respond form > .autotowing-full-form,
+.autotowing-gridtwo-social,.autotowing-services-form ul li.right-form { 
+	float: left; 
+}
+.autotowing-breadcrumb::before,.autotowing-breadcrumb::after,.autotowing-accordion .panel-heading .panel-title a.collapsed::before,
+.autotowing-accordion .panel-heading .panel-title a::before,.widget_recent_post ul li::before,.widget_cetagories ul li a::before,
+.widget_calendar_archives ul li a::before,.widget_gallery figure a::before,.widget_gallery figure a i,.autotowing-blog-gridtwo figure span,
+.autotowing-modern-gallery ul li:hover figure > a > span,.autotowing-liststyle-one li::before,.autotowing-service-thumb figcaption { 
+	right: 0px; left: auto;
+}
+.autotowing-blog-medium figure a::before,.widget-appointment-select::after,.widget_search form label,.autotowing-coomingsoon form input[type="submit"],
+.autotowing-search-text form input[type="submit"] {  
+	left: 0px; right: auto; 
+}
+.autotowing-dropdown-menu,.autotowing-vehicle-slide-text figure figcaption,.autotowing-testimonial-text,.autotowing-testimonial p,
+.autotowing-blog-medium-layer {
+	text-align: right;
+}
+.autotowing-promo-box-btn,.widget_services ul li i,.autotowing-related-option li::before,.autotowing-accordion .panel-heading .panel-title a.collapsed::before,
+.autotowing-accordion .panel-heading .panel-title a::before,.autotowing-pagination > ul > li > .next,.widget_recent_post ul li::before,
+.widget_cetagories ul li a::before,.widget_calendar_archives ul li a::before,.widget_gallery figure a i,blockquote::before,
+.autotowing-liststyle-one li::before {
+	-webkit-transform: scaleX(-1);
+	   -moz-transform: scaleX(-1);
+	    -ms-transform: scaleX(-1);
+	     -o-transform: scaleX(-1);
+	        transform: scaleX(-1);
+}
+/*Header*/
+.autotowing-strip-info li { margin: 0px 0px 0px 97px;}
+.autotowing-strip-info li small { margin: 0 14px 0 0px;}
+.autotowing-strip-info li i { margin: 6px 0px 0px 10px;}
+.autotowing-shadule { padding: 16px 73px 0 0px;}
+.autotowing-shadule i ~ .autotowing-shadule-list { margin: 0px 24px 0px 0px;}
+.autotowing-appointment-btn { margin: 29px 14px 0 0px;}
+.navbar-nav > li:first-child { padding-left: 20px; padding-right: 2px;}
+.navbar-nav > li:last-child { padding-right: 20px; padding-left: 0px;}
+.autotowing-dropdown-menu .autotowing-dropdown-menu { left: auto; right: 100%; margin: 0 5px 0 0px;}
+.autotowing-promo-box-wrap figure figcaption { padding: 38px 46px 0 36px;}
+.autotowing-services.autotowing-services-list { padding-left: 47px; padding-right: 0px;}
+.autotowing-services-list a ~ .autotowing-services-list-text { padding: 14px 103px 0 0px;}
+.autotowing-services-list a span { left: -9px; right: auto;}
+.autotowing-testimonial figure ~ .autotowing-testimonial-text { padding: 3px 121px 0 0px;}
+.autotowing-testimonial { padding: 37px 42px 33px 30px;}
+.autotowing-blog-medium figure ~ .autotowing-blog-medium-text { margin: 0 231px 0 0px; padding: 0 33px 0 0px;}
+.autotowing-footer-services-text i.autotowing-transport ~ h4 { padding: 0 80px 0 0px;}
+.autotowing-footer-services-text i ~ h4 { padding: 5px 62px 0px 0px;}
+.autotowing-footer-services-text { padding: 21px 41px 22px 20px}
+.widget_contact_us ul li i { margin: -1px 0px 0 13px;}
+.widget_contact_us ul li { padding: 0 19px 0 0px;}
+.widget_contact_us ul.address li i { margin: 4px 0px 0px 13px;}
+.widget_contact_us ul li i ~ p { padding: 0px 24px 0px 0px;}
+.widget_services ul li { padding: 0 48px 0 0px;}
+.widget_services ul li i { right: 20px; left: auto;}
+.autotowing-main-section.autotowing-blog-mediumfull { overflow: hidden;}
+.widget_appointment ul li input[type="text"] { padding-right: 19px;}
+.widget_appointment ul li textarea { padding-right: 20px;}
+.autotowing-breadcrumb ul > li { padding: 0 30px 0 0px;}
+.autotowing-breadcrumb ul > li::before { right: 10px; left: auto;}
+.autotowing-error-pagefull { background-position: left bottom;}
+.autotowing-aboutusfull { background-position: left center;}
+.autotowing-aboutus .autotowing-footer-services-text { padding: 21px 35px 22px 16px;}
+.autotowing-footer-services-text.padding { padding: 21px 27px 22px 16px;}
+.autotowing-aboutus .autotowing-footer-services-text i.autotowing-computer ~ h4 { padding: 5px 54px 0 0px;}
+.autotowing-blog-grid figure span { right: auto; left: 15px;}
+.autotowing-blog-grid ul li:hover figure span { left: 0px; right: auto;}
+.autotowing-blog-grid-text { padding: 23px 19px 22px 17px;}
+.autotowing-related-option li { margin: 0px 0px 0px 15px;}
+.autotowing-related-option li::before { left: -10px; right: auto;}
+.autotowing-accordion .panel-heading .panel-title > a { padding: 5px 60px 5px 0px;}
+.autotowing-related-option li a i { margin: 0px 0px 0px 6px;}
+.autotowing-pagination > ul > li > .previous,.widget_search form label::after  {
+	-webkit-transform: scaleX(1);
+	   -moz-transform: scaleX(1);
+	    -ms-transform: scaleX(1);
+	     -o-transform: scaleX(1);
+	        transform: scaleX(1);
+}
+.widget_search form input[type="search"] { padding-left: 45px; padding-right: 13px;}
+.widget_search form label::before { left: auto; right: 3px;}
+.widget_search form label::after { left: 11px; right: auto;}
+.widget_recent_post ul li { padding: 0 26px 0 0px;}
+.widget_popular_post figure ~ .widget-popular-post-text { padding: 1px 70px 0 0px;}
+.widget_popular_post .autotowing-blog-option li { margin: 0 0px 0 12px;}
+.widget_popular_post .autotowing-blog-option li a i { margin: 0px 0px 0px 6px;}
+.widget_cetagories ul li:hover a,.widget_calendar_archives ul li:hover a { padding-left: 0px; padding-right: 18px;}
+.widget_gallery figure a i { margin: -7px -5px 0px 0px;}
+.widget_gallery ul li:hover figure a i { left: auto; right: 50%;}
+.autotowing-blog-option li a i { margin: 0px 0px 0px 9px;}
+.autotowing-blog-option li { margin: 0px 29px 0px 0px;}
+.autotowing-blog-option li::before { right: -15px; left: auto;}
+blockquote::before { left: auto; right: 30px;}
+blockquote { padding: 22px 119px 14px 29px;}
+.autotowing-blog-social { text-align: left;}
+.autotowing-tags span { margin: 0 0px 0 13px;}
+.autotowing-tags a { margin: 2px 0px 0px 6px;}
+.autotowing-blog-social span { margin: 0px 0px 0px 13px;}
+.autotowing-admin-post figure ~ .autotowing-admin-post-text { margin: -1px 180px 0 0px; padding: 0px 30px 0px 0px;}
+.autotowing-admin-social li { margin: 0px 0px 0px 10px;}
+.comment-list li figure img ~ figcaption { padding: 5px 20px 0 0px; margin: 0px 50px 0px 0px;}
+.text-holder .post-date::before,.comment-reply-link::before { left: -11px; right: auto;}
+.text-holder .post-date,.comment-reply-link { margin: 0 0px 0 22px;}
+.comment-respond form p input[type="text"], .comment-respond form p input[type="email"],.autotowing-full-form textarea { padding-right: 19px;}
+.autotowing-blog-gridtwo-text .autotowing-related-option li::before { left: -13px; right: auto;}
+.autotowing-blog-gridtwo-text .autotowing-related-option li { margin: 0px 0px 0px 24px;}
+.autotowing-gridtwo-social li { margin: 0px 15px 0px 0px;}
+.autotowing-blog-large-text time { margin: 0px 0px 22px 30px;}
+.autotowing-blog-large-text .autotowing-related-option li::before { left: -15px; right: auto;}
+.autotowing-blog-large-text .autotowing-related-option li { margin: 0px 0px 0px 29px;}
+.autotowing-blog-post-comment li { margin: 0px 0px 0px 29px;}
+.autotowing-contact-info-two i ~ .autotowing-contact-info-text { padding: 0px 68px 0px 0px;}
+.autotowing-contact-info-two i.autotowing-interface,.autotowing-contact-info-two i.autotowing-technology-12 { padding: 0px 7px 0px 0px;}
+.autotowing-contact-form ul li input[type="text"],.autotowing-contact-form ul li textarea { padding-right: 19px;}
+.autotowing-coomingsoon-content { background-position: left top;}
+.coomingsoon-transparent::before { right: auto; left: 38%;}
+.autotowing-countdown .countdown-section { margin: 0px 0px 30px 96px;}
+.autotowing-countdown .countdown-section:before { right: auto; left: -52px;}
+.autotowing-coomingsoon form input[type="email"] { padding-right: 15px;}
+.autotowing-coomingsoon-social li { margin: 0 0px 0 20px;}
+.autotowing-modern-gallery figure > a > span { left: auto; right: 15px;}
+.autotowing-searchfull { background-position:  left bottom;}
+.autotowing-search-text form input[type="text"] { padding-right: 15px;}
+.autotowing-liststyle-one li { padding: 0px 24px 0px 0px;}
+.autotowing-service-thumb { padding-left: 0px; padding-right: 47px;}
+.autotowing-services-form input[type="text"], .autotowing-services-form textarea { padding-right: 19px;}
+.autotowing-services-modern i ~ .autotowing-services-modern-text { padding: 0px 98px 0px 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+/*	Media 768Px Start */
+@media (min-width: 768px) and (max-width: 990px) {
+	.navbar { position: relative;}
+	.navbar-toggle { display: block; background-color: #eee; margin: 18px 0px 13px 0px;}
+	.navbar-collapse { padding: 0px 0px 0px 0px; width: 260px; background-color: #fff; box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.10); border: none; position: absolute; left: 50%; top: 100%; z-index: 9999; margin: 10px 0px 0px -130px; }
+	#autotowing-header .collapse { display: none; } #autotowing-header .collapse.in { display: block; } .autotowing-thumbnail { margin-bottom: 0px; }
+	.navbar-nav { margin: 0px; padding-top: 10px; text-align: left;} .navbar-nav > li > a:before,.navbar-nav > li > a:after { display: none; }
+	.navbar-nav .autotowing-dropdown-menu { margin: 0px; float: left; width: 100%; position: relative; opacity: 1; visibility: visible; background-color: transparent; }
+	.navbar-nav .autotowing-dropdown-menu {
+		-webkit-transform: translate(0px);
+		   -moz-transform: translate(0px);
+		    -ms-transform: translate(0px);
+		     -o-transform: translate(0px);
+		        transform: translate(0px);
+	}
+	.navbar .navbar-collapse { padding: 0px;}
+	.navbar-nav > li > a { float: left; width: 100%; padding: 20px 20px 22px 20px; color: #555555; line-height: 14px;}
+	.navbar-nav > li { width: 100%; float: left; }
+	.autotowing-main-header .col-md-3 { width: 100%;} 
+	.autotowing-dropdown-menu .autotowing-dropdown-menu { left: 0px;}
+	.navbar-nav > li { padding: 0px;}
+	.navbar-nav > li:first-child { padding-left: 0px;}
+	.autotowing-main-content aside.col-md-3 { width: 100%;}
+	.autotowing-main-content .widget { width: 50%; padding: 0px 15px;}
+	/* Main Grid */
+	.autotowing-main-content .col-md-4,.autotowing-main-content .col-md-3 { float: none; display: inline-block; vertical-align: top; margin-right: -4px; width: 50%; }
+	.autotowing-main-content .col-md-7,.autotowing-main-content .col-md-5 { width: 100%; float: left; margin-bottom: 0px; }
+	.col-md-12 { float: left; width: 100%; }
+	/*header*/
+	.autotowing-top-strip { text-align: center; padding: 15px 0px;}
+	.autotowing-strip-info li { float: none; display: inline-block; margin: 0px 30px;}
+	.autotowing-strip-info li.right { display: inline-block; float: none; margin: 10px 0px 0px;}
+	.logo { text-align: center;}
+	.autotowing-shadule { padding-right: 0px;}
+	.autotowing-main-header aside.col-md-4 { width: 43%;}
+	.navbar-header { float: none; display: inline-block;}
+	/*banner*/
+	.autotowing-banner-caption-two .autotowing-banner-text h1 { font-size: 60px;}
+	.autotowing-banner-text h2 { margin: 0px 0px 30px;}
+	.autotowing-banner-caption.autotowing-banner-caption-two { margin: -78px 0 0;}
+	.autotowing-banner-caption-heading { font-size: 40px;}
+	.autotowing-banner-caption.autotowing-banner-caption-three .col-md-6 { float: left; width: 50%;}
+	.autotowing-banner-caption-three .autotowing-banner-text h2 { font-size: 30px;}
+	.autotowing-banner-caption-three .autotowing-banner-text h1 { font-size: 35px;}
+	.autotowing-banner-caption.autotowing-banner-caption-three { margin: -55px 0 0;}
+	.autotowing-banner-caption { margin: -60px 0px 0px;}
+	/*Content*/
+	.autotowing-promo-box-wrap figure figcaption { padding: 10px 20px 0;}
+	.autotowing-promo-box-wrap figure figcaption h2 { font-size: 30px;}
+	.autotowing-promo-box-wrap figure figcaption p { font-size: 14px; width: 90%;}
+	.autotowing-promo-box-btn { font-size: 60px; margin: -62px 0px 0px;}
+	.autotowing-services.autotowing-services-list { padding: 0px;}
+	.autotowing-services-thumb figcaption { width: 65%; right: 0px; left: auto;}
+	.autotowing-services.autotowing-services-list ul li {float: right; width: 50%; margin-bottom: 40px;}
+	.autotowing-services-list a::after { display: none;}
+	.autotowing-services.autotowing-services-list > ul > li:last-child { margin-bottom: 40px;}
+	.autotowing-testimonial-wrap { padding: 0px;}
+	.autotowing-testimonial { padding: 37px 25px 33px 25px;}
+	.autotowing-footer-services-text i.autotowing-transport { line-height: 0.9;}
+	.autotowing-footer-services ul li { float: right; width: 50%;}
+	.autotowing-footer-one .widget { display: inline-block; margin-right: -4px; vertical-align: top; width: 50%;}
+	.autotowing-blog-medium figure ~ .autotowing-blog-medium-text { float: left; width: 100%; margin: 0px; padding: 20px 0px 0px;}
+	.autotowing-blog-medium figure { width: 100%;}
+	.autotowing-testimonial-text .star-rating { width: 62%;}
+	.autotowing-footer-services-text { padding: 21px 20px 22px 25px;}
+	.autotowing-error-pagefull { background-image: none;}
+	.autotowing-error-wrap::before { margin: -169px 0 0 -145px;}
+	.autotowing-aboutusfull { background-image: none;}
+	.col-md-4.right { width: 50%;}
+	.autotowing-services-list.autotowing-about-list ul { width: 100%;}
+	.autotowing-services-list.autotowing-about-list { padding: 40px 0px 0px; text-align: center;}
+	.autotowing-services.autotowing-services-list.autotowing-about-list > ul > li { width: auto; margin: 0px 18px;}
+	.autotowing-faq-thumb { display: none;}
+	.autotowing-subheader p { width: 40%;}
+	.autotowing-main-content aside.col-md-3 { width: 100%;}
+	.autotowing-main-content .widget { width: 50%; padding: 0px 15px;}
+	.autotowing-prev-post figure figcaption { padding: 12px 20px 0;}
+	.autotowing-next-post figure figcaption h5 { font-size: 16px;}
+	.autotowing-next-post figure figcaption { padding: 15px 20px 0 13px;}
+	.autotowing-blog-option { float: left;}
+	.autotowing-blog > ul > li { float: left; width: 50%;}
+	.autotowing-blog.autotowing-blog-large > ul > li,.autotowing-contact-info p { width: 100%;}
+	.autotowing-main-content .autotowing-contact-info > ul > li { float: left; width: 33.333%;}
+	.autotowing-contact-info i::after { width: 185px;}
+	.coomingsoon-transparent::before { right: 0px;}
+	.autotowing-gallery > ul > li { width: 50%; float: left;}
+	.autotowing-service-text { margin-bottom: 30px;}
+	.services-modern-img { padding: 0px 0px 30px;}
+	.autotowing-main-content .autotowing-main-section.autotowing-services-modernfull .col-md-4 { width: 100%;}
+	.autotowing-services.autotowing-services-modern > ul > li { float: left; width: 50%;}
+	.services-modern-img { display: block; margin: 0 auto; padding: 0 0 30px; width: auto; float: none; text-align: center;}
+	.autotowing-footer-one .widget.widget_services { margin: 0px 0px 47px;}
+
+
+
+
+}
+
+/* Media 420Px Start */
+@media (max-width: 767px) {
+	.navbar { position: relative;}
+	.navbar-toggle { background-color: #eee; margin: 18px 0px 18px 0px; float: none; display: inline-block;}
+	.navbar-collapse { padding: 0px 0px 0px 0px; width: 260px; background-color: #fff; box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.10); border: none; position: absolute; left: 50%; top: 100%; z-index: 9999; margin: 10px 0px 0px -130px; }
+	#autotowing-header .collapse { display: none; } #autotowing-header .collapse.in { display: block; } .autotowing-thumbnail { margin-bottom: 0px; }
+	.navbar-nav { margin: 0px; padding-top: 10px; float: left; text-align: right; } .navbar-nav > li > a:before { display: none; }
+	.navbar-nav .autotowing-dropdown-menu { margin: 0px; float: left; width: 100%; position: relative; opacity: 1; visibility: visible; background-color: transparent; }
+	.navbar-nav .autotowing-dropdown-menu {
+		-webkit-transform: translate(0px);
+		   -moz-transform: translate(0px);
+		    -ms-transform: translate(0px);
+		     -o-transform: translate(0px);
+		        transform: translate(0px);
+	}
+	.navbar .navbar-collapse { padding: 0px;}
+	.navbar-nav > li > a { float: left; width: 100%; padding: 20px 20px 22px 20px; color: #555555; line-height: 14px;}
+	.navbar-nav > li { width: 100%; float: left; }
+	.autotowing-dropdown-menu .autotowing-dropdown-menu { right: 0px;}
+	.navbar-nav > li { padding: 0px;}
+	.navbar-nav > li:first-child { padding-left: 0px; padding-right: 0px;}
+	.autotowing-main-content aside.col-md-3 { width: 100%;}
+	.autotowing-main-content .widget { width: 50%; padding: 0px 15px;}
+	/* Main Grid */
+	.autotowing-main-content .col-md-4,.autotowing-main-content .col-md-3{ float: none; display: inline-block; vertical-align: top; margin-right: -4px; width: 50%; }
+	.autotowing-main-content .col-md-7,.autotowing-main-content .col-md-5 { width: 100%; float: right; margin-bottom: 0px; }
+	.col-md-12 { float: right; width: 100%; }
+	/*Main Grid*/
+	.autotowing-top-strip { padding: 30px 0px;}
+	.logo,.autotowing-main-header,.autotowing-strip-info { text-align: center;}
+	.autotowing-strip-info li { margin: 0px 0px 10px; float: none; display: inline-block;}
+	.autotowing-strip-info li small { margin: 10px 14px 0 0px;}
+	.autotowing-shadule { padding: 6px 0px 0px;}
+	.autotowing-shadule i { width: 100%; margin: 7px 0 5px;}
+	.autotowing-appointment-btn,.autotowing-fancy-btn { float: none; display: inline-block; vertical-align: top;}
+	.autotowing-banner-caption { display: none;}
+	.autotowing-banner { margin: 0px;}
+	/*content*/
+	.autotowing-main-header aside.col-md-4,.autotowing-main-header aside.col-md-3,.autotowing-main-header aside.col-md-5 { width: 100%;}
+	.autotowing-appointment-btn,.autotowing-fancy-btn { float: none; display: inline-block; vertical-align: top;}
+	.autotowing-promo-box-wrap ul li,.autotowing-twitter-feed p { width: 100%;}
+	.autotowing-promo-box-wrap figure figcaption { padding: 25px 20px 0 34px;}
+	.autotowing-testimonial-wrap { padding: 0px;}
+	.autotowing-testimonial figure ~ .autotowing-testimonial-text { padding: 0px; float: left;}
+	.autotowing-testimonial { padding: 37px 25px 33px 25px;}
+	.autotowing-testimonial-text .star-rating { width: 50%;}
+	.autotowing-blog-medium figure ~ .autotowing-blog-medium-text { float: left; width: 100%; margin: 0px; padding: 20px 0px 0px;}
+	.autotowing-blog-medium figure { width: 100%;}
+	.autotowing-service-couponfull { background-size: cover;}
+	.autotowing-service-coupon { text-align: center;}
+	.autotowing-claim-btn { display: inline-block; float: none;}
+	.autotowing-service-coupon h2 { margin: 0px 0px 20px; float: none;}
+	.autotowing-services.autotowing-services-list > ul > li:last-child { margin: 0 0 79px;}
+	.autotowing-footer-one .autotowing-footer-services ul li { float: right; width: 50%;}
+	.autotowing-footer-services ul li { float: left; width: 50%;}
+	.autotowing-footer-services-text i.autotowing-transport { line-height: 1.2;}
+	.autotowing-footer-services-text { padding: 21px 15px 22px;}
+	.autotowing-footer-one .widget { display: inline-block; margin-left: -4px; vertical-align: top; width: 50%;}
+	.autotowing-subheader p { width: 65%;}
+	.autotowing-error-pagefull { background-image: none;}
+	.autotowing-error-wrap::before { margin: -169px 0 0 -145px;}
+	.autotowing-error-text p { width: 73%;}
+	.autotowing-services-list.autotowing-about-list ul { width: 100%;}
+	.autotowing-services.autotowing-services-list.autotowing-about-list ul li { margin: 0 25px 0px 0; float: none; display: inline-block;}
+	.autotowing-about-list.autotowing-services-list a::after { display: none;}
+	.autotowing-aboutusfull { background-image: none;}
+	.col-md-4.right { width: 100%;}
+	.autotowing-services-list.autotowing-about-list { padding: 40px 0px 0px; text-align: center;}
+	.autotowing-blog-grid-wrap { padding: 0px 15px;}
+	.autotowing-blog-grid-text { padding: 23px 15px 22px;}
+	.autotowing-main-content aside.col-md-3 { width: 100%;}
+	.autotowing-main-content .widget { width: 50%; padding: 0px 15px;}
+	.autotowing-thumb-heading { padding: 16px 15px;}
+	.comment-list .children { padding: 0px;}
+	.autotowing-blog-option { float: left;}
+	.autotowing-prenxt-btn { width: 100%;}
+	.autotowing-blog > ul > li { float: left; width: 50%;}
+	.autotowing-blog.autotowing-blog-large > ul > li,.autotowing-coomingsoon form { width: 100%;}
+	.autotowing-contact-info i::after { display: none;}
+	.autotowing-contact-info { overflow: hidden;}
+	.coomingsoon-transparent::before { right: 0px;}
+	.autotowing-countdown .countdown-section { margin: 0px 60px 30px 0px;}
+	.autotowing-countdown .countdown-section::before { right: -38px;}
+	.autotowing-classic-gallery-text h5 { font-size: 16px;}
+	.autotowing-classic-gallery-text { padding: 17px 0px 30px;}
+	.autotowing-gallery > ul > li { width: 50%; float: left;}
+	.autotowing-gallery.autotowing-masonry-gallery > ul > li.col-md-6 { width: 100%;}
+	.autotowing-service-text { margin-bottom: 30px;}
+	.services-modern-img { padding: 0px 0px 30px;}
+	.autotowing-main-content .autotowing-main-section.autotowing-services-modernfull .col-md-4 { width: 100%;}
+	.autotowing-services.autotowing-services-modern > ul > li { float: right; width: 50%;}
+	.services-modern-img { display: block; margin: 0 auto; padding: 0 0 30px; width: auto; float: none; text-align: center;}
+	.autotowing-strip-info li.right { float: none; display: inline-block;}
+	.autotowing-footer-one .widget.widget_services { margin: 0px 0px 95px;}
+
+	
+
+}
+
+/* Media 300Px Start */
+@media (max-width: 480px) {
+/*main grid*/
+	.autotowing-main-content .widget { width: 100%; padding: 0px;}
+	.autotowing-main-content .col-md-4,.autotowing-main-content .col-md-3,.autotowing-main-content .col-md-6 { margin-right: 0px; width: 100%; }
+	/*main grid*/
+	.autotowing-promo-box-wrap figure figcaption { padding: 0px 10px;}
+	.autotowing-promo-box-wrap figure figcaption h2 { font-size: 30px; margin: 0px 0px 10px;}
+	.autotowing-promo-box-wrap figure figcaption p { font-size: 14px;}
+	.autotowing-promo-box-btn { display: none;}
+	.autotowing-services.autotowing-services-list { padding: 0px;}
+	.autotowing-footer-one .autotowing-footer-services ul li { width: 100%;}
+	.autotowing-services-heading { font-size: 50px; margin-top: 0px;}
+	.autotowing-subheader p,.autotowing-blog > ul > li,.autotowing-contact-form ul li { width: 100%;}
+	.autotowing-aboutus-heading { font-size: 45px;}
+	.autotowing-counter > ul > li { width: 50%;}
+	.autotowing-services.autotowing-services-list.autotowing-about-list ul li { margin: 0px 8px;}
+	.autotowing-blog-grid-wrap { padding: 0px 19px;}
+	.autotowing-blog-grid-text { padding: 23px 17px 22px 19px;}
+	.autotowing-blog-option li { margin: 0 0 0 20px;}
+	.autotowing-blog-option li::before { left: -10px;}
+	.autotowing-blog-option { float: left;}
+	.autotowing-admin-post figure ~ .autotowing-admin-post-text { float: left; margin: 0px; padding: 0px;}
+	.autotowing-admin-post figure { margin: 0px 0px 20px;}
+	.comment-respond form p { width: 100%;}
+	.autotowing-main-content .widget { width: 100%; padding: 0px;}
+	blockquote { padding: 95px 20px 14px 35px;}
+	.autotowing-post-tags,.autotowing-blog-social { text-align: center;}
+	.autotowing-tags,.autotowing-blog-social { width: 100%;}
+	.autotowing-tags span { float: none;}
+	.autotowing-tags { margin: 0px 0px 20px;}
+	.autotowing-tags a,.autotowing-blog-social ul { float: none; display: inline-block;}
+	.autotowing-prenxt-post { padding: 0px;}
+	.autotowing-prev-post figure figcaption { padding: 0px 20px;}
+	.autotowing-next-post figure figcaption { padding: 0 20px 0 17px;}
+	.autotowing-prenxt-btn { float: right; margin: -21px 30px 0 0;}
+	.autotowing-prenxt-post .slick-arrow { bottom: -45px;}
+	.autotowing-subheader p,.autotowing-blog > ul > li,.autotowing-contact-form ul li { width: 100%;}
+	.autotowing-contact-info p { width: 74%;}
+	.autotowing-countdown .countdown-section::before { right: -8px;}
+	.autotowing-countdown .countdown-row  { overflow: hidden;}
+	.autotowing-countdown .countdown-section { width: 50%;}
+	.autotowing-countdown .countdown-section { margin: 0 0 30px;}
+	.autotowing-gallery-filterable ul li { margin: 0 3px 15px;}
+	.autotowing-gallery > ul > li { width: 100%;}
+	.autotowing-searchfull { background-image: none;}
+	.autotowing-service-thumb figcaption { display: none;}
+	.autotowing-services-form ul li { width: 100%;}
+	.autotowing-service-thumb { padding-left: 0px;}
+	.autotowing-services.autotowing-services-modern > ul > li,.autotowing-footer-one .col-md-3.widget { width: 100%;}
+	.autotowing-contact-info-two ul li,.autotowing-contact-info > ul > li.col-md-4 { width: 100%;}
+	.autotowing-footer-one .widget.widget_services { margin: 0px 0px 33px;}
+
+
+
+}
+
+/* Media 940Px Start */
+@media screen and (min-width: 991px) and (max-width: 1054px) {
+	.autotowing-strip-info li.left { font-size: 16px;}
+	.autotowing-strip-info li { margin: 0 23px 0 0;}
+	.autotowing-shadule { padding: 16px 20px 0 0px;}
+	.autotowing-appointment-btn { padding: 14px 17px 17px; margin-right: 12px;}
+	.autotowing-dropdown-menu { width: 215px;}
+	/*banner*/
+	.autotowing-banner-caption-two .autotowing-banner-text h1 { font-size: 60px;}
+	.autotowing-banner-text h2 { margin: 0px 0px 30px;}
+	.autotowing-banner-caption.autotowing-banner-caption-two { margin: -78px 0 0;}
+	.autotowing-banner-caption-heading { font-size: 40px;}
+	.autotowing-banner-caption.autotowing-banner-caption-three .col-md-6 { float: left; width: 50%;}
+	.autotowing-banner-caption-three .autotowing-banner-text h2 { font-size: 30px;}
+	.autotowing-banner-caption-three .autotowing-banner-text h1 { font-size: 35px;}
+	.autotowing-banner-caption.autotowing-banner-caption-three { margin: -55px 0 0;}
+	.autotowing-banner-caption { margin: -83px 0px 0px;}
+	.autotowing-promo-box-wrap figure figcaption { padding: 19px 30px 0;}
+	.autotowing-promo-box-btn { margin: -46px 0 0;}
+	.autotowing-vehicle-slide-text figure figcaption { padding: 24px 15px 17px;}
+	.autotowing-vehicle-slide-text figure figcaption h5 { font-size: 17px;}
+	.autotowing-services.autotowing-services-list ul li { margin: 0px 0px 65px;}
+	.widget_contact_us ul li i { margin: -1px 0px 0px 6px;}
+	.widget_contact_us ul li { font-size: 14px;}
+	.autotowing-footer-services-text i.autotowing-transport { line-height: 1.2;}
+	.autotowing-error-pagefull { background-image: none;}
+	.autotowing-error-wrap::before { margin: -169px 0 0 -145px;}
+	.autotowing-error-text p { width: 73%;}
+	.autotowing-main-content.autotowing-error-pagefull .col-md-8 { width: 100%;}
+	.autotowing-faq-thumb { padding: 100px 0px 0px;}
+	.autotowing-blog-option { float: left;}
+	.autotowing-prev-post figure figcaption { padding: 12px 20px 0;}
+	.autotowing-next-post figure figcaption h5 { font-size: 16px;}
+	.autotowing-next-post figure figcaption { padding: 15px 20px 0 13px;}
+	.autotowing-prenxt-post { padding: 0px 26px;}
+	.autotowing-contact-info p { width: 70%;}
+	.autotowing-prenxt-post-layer { padding: 0px 10px;}
+	.autotowing-contact-info i::after { width: 260px;}
+	.autotowing-classic-gallery-text { padding: 17px 0px 30px;}
+
+
+
+}
+
+
+
+

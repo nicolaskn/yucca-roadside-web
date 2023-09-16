@@ -1,0 +1,3378 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+/*
+01. Theme Typo
+02. Header
+    02.1 Top Strip
+        02.1.1 Top Info
+        02.1.2 Search
+    02.1 Logo
+    02.2 Navigation
+        02.2.1 SubMenu
+        02.2.1 MegaMenu
+03. Content
+
+    03.1 Blog
+        03.1.2 Blog Grid
+        03.1.3 Blog Large
+        03.1.4 Blog Detail
+ 
+    03.3 Default Pages Style
+        03.3.1 404
+        03.3.2 Services
+        03.3.3 No Search Result
+        03.3.4 Contact Us
+        03.3.5 PricePlan
+        03.3.6 Faq
+        03.3.7 About Us
+
+    03.4 Projects
+        03.4.1 Project Grid
+        03.4.2 Project Medium
+        03.4.3 Project Modren
+        03.4.4 Artist Detail
+
+    03.5 Team
+        03.5.1 Team Grid
+        03.5.2 Team Detail
+
+    03.6 Shop
+        03.6.1 Shop Grid
+        03.6.2 Shop Detail
+ 
+04. Sidebar Widget
+    04.1 Widget CATEGORY WIDGET
+    04.2 Widget Latest News
+    04.3 Widget Calendar Archive
+    04.4 Widget Text
+    04.5 Widget Recent Posts
+    04.7 Widget Intagram Photos
+    04.8 Popular Tags
+    04.9 User Links
+ 
+05. Footer
+    05.1 Footer Widgets
+    05.2 CopyRight
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ffffff;
+    color: #232323;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #232323;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    margin: 0 0 8px;
+}
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #232323;
+}
+p a {
+    color: #232323;
+}
+p {
+    line-height: 24px;
+    letter-spacing: 1.1px;
+    margin-bottom: 10px;
+}
+a {
+    color: #232323;
+    text-decoration: none;
+}
+a:hover, a:focus, a:active {
+    outline: none;
+}
+ul {
+    margin-bottom: 0;
+}
+figure {
+    margin-bottom: 6px;
+    position: relative;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+strong {
+    color: #555555;
+}
+iframe {
+    border: none;
+    float: left;
+    width: 100%;
+}
+.wp-caption, .wp-caption-text, .gallery-caption, .bypostauthor {
+}
+.wp-caption.alignleft, .wp-caption.alignnone {
+    width: 100%;
+}
+select {
+    background-color: #f0eef0;
+    border: 1px solid #dfdfdf;
+    color: #232323;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    padding: 8px 12px;
+    width: 100%;
+}
+label {
+    color: #232323;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+button {
+    border: none;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    background-color: #f2f2f2;
+    border: none;
+    box-sizing: border-box;
+    color: #aaa9a9;
+    display: inline-block;
+    font-size: 13px;
+    height: 30px;
+    line-height: 20px;
+    outline: none;
+    padding: 4px 6px;
+    vertical-align: middle;
+    box-shadow: none;
+}
+input[type="submit"] {
+    outline: none;
+}
+form p {
+    float: left;
+    position: relative;
+}
+form p span i {
+    color: #474747;
+    left: 16px;
+    position: absolute;
+    top: 13px;
+}
+option {
+    padding: 5px 15px;
+}
+li {
+    line-height: 28px;
+    list-style: inside none disc;
+}
+ul ul {
+    margin-left: 20px;
+}
+ol {
+    float: none;
+    list-style: outside none decimal;
+    padding-left: 15px;
+}
+ol ol {
+    margin-left: 20px;
+}
+ol li {
+    list-style: outside none decimal;
+    width: 100%;
+}
+table {
+    background-color: transparent;
+    max-width: 100%;
+}
+th {
+    text-align: left;
+}
+table {
+    margin-bottom: 15px;
+    width: 100%;
+}
+table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td {
+    border: 1px solid #dddddd;
+    line-height: 1.5;
+    padding-left: 3px;
+    text-align: center;
+    vertical-align: top;
+}
+table thead tr th {
+    border-top: 1px solid #dddddd;
+    text-align: center;
+    text-transform: capitalize;
+}
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    border-top: 1px solid #dddddd;
+}
+table > thead > tr > th {
+    border-bottom: 2px solid #dddddd;
+    vertical-align: bottom;
+}
+table > caption + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > th, table > thead:first-child > tr:first-child > th, table > caption + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > td, table > thead:first-child > tr:first-child > td {
+    border-bottom: 0 none;
+}
+table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 6px 10px;
+}
+p ins {
+    color: #999;
+}
+dl dd   { margin-left: 20px; }
+address { font-style: italic; }
+.sticky {}
+.autotowing-main-section {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.autotowing-main-content         { padding: 80px 0px 40px 0px; }
+.autotowing-right-section        { float: right; }
+.autotowing-left-section         { float: left; }
+.autotowing-main-wrapper,.autotowing-main-content,.autotowing-header-one {
+    float: left;
+    width: 100%;
+}
+/*autotowing-top-strip*/
+.autotowing-top-strip {
+    float: left;
+    width: 100%;
+    background-color: #232323;
+    padding: 12px 0px;
+}
+.autotowing-strip-info {
+    float: left;
+    width: 100%;
+}
+.autotowing-strip-info li {
+    float: left;
+    list-style: none;
+    font-size: 16px;
+    color: #fff;
+    margin: 0px 97px 0px 0px;
+}
+.autotowing-strip-info li:last-child { margin: 0px;}
+.autotowing-strip-info li.right { float: right;}
+.autotowing-strip-info li span {
+    font-weight: bold;
+    color: #ffffff;
+}
+.autotowing-strip-info li small {
+    padding: 2px 14px;
+    display: inline-block;
+    margin: 0px 0px 0px 14px;
+}
+.autotowing-strip-info li.left {
+    font-size: 20px;
+    font-style: italic;
+}
+.autotowing-strip-info li i {
+    float: left;
+    margin: 6px 10px 0px 0px;
+}
+/*autotowing-main-header*/
+.autotowing-main-header {
+    float: left;
+    width: 100%;
+    padding: 20px 0px 10px;
+}
+.logo {
+    float: left;
+    width: 100%;
+    padding: 0px 0px 10px;
+}
+.autotowing-shadule {
+    float: left;
+    width: 100%;
+    padding: 16px 0px 0px 73px;
+}
+.autotowing-shadule i {
+    float: left;
+    font-size: 16px;
+    margin: 7px 0px 0px;
+}
+.autotowing-shadule i ~ .autotowing-shadule-list { padding: 0px 0px 0px 24px;}
+.autotowing-shadule-list li {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.autotowing-shadule-list li time { font-weight: normal;}
+.autotowing-appointment-btn {
+    float: right;
+    border: 1px solid;
+    font-weight: bold;
+    padding: 14px 29px 17px 27px;
+    margin: 19px 0px 0px 14px;
+}
+.autotowing-appointment-btn:hover { color: #ffffff;}
+.autotowing-appointment-btn i {
+    float: left;
+    margin: 4px 5px 0px 0px;
+}
+.autotowing-fancy-btn {
+    float: right;
+    width: 174px;
+    text-transform: uppercase;
+    font-size: 13px;
+    overflow: hidden;
+    margin: 19px 0px 0px;
+}
+.autotowing-fancy-btn span {
+    float: left;
+    width: 76px;
+    padding: 8px 15px 9px 13px;
+    border: 2px solid #ececec;
+    background-color: #f3f3f3;
+    position: relative;
+}
+.autotowing-fancy-btn span:after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    border-bottom: 55px solid;
+    border-left: 16px solid transparent;
+}
+.autotowing-fancy-btn p {
+    float: right;
+    width: 98px;
+    padding: 11px 15px 11px 13px;
+    font-weight: bold;
+    line-height: 15px;
+    color: #ffffff;
+    margin: 0px;
+    letter-spacing: 0px;
+    font-size: 13px;
+}
+.autotowing-fancy-btn p small {
+    font-style: italic;
+    letter-spacing: 1px;
+}
+/*header-navigation*/
+.autotowing-header-navigation {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+/* Navigation */
+a.menu-link {
+    color: #ffffff;
+    display: none;
+}
+.menu-link span {
+  border-bottom: solid 3px #fff;
+  border-top: double 10px #fff;
+  float: right;
+  height: 17px;
+  margin: 0 5px 0px 0;
+  width: 30px;
+}
+.js .menu > ul ul.active {
+  margin: 0;
+  max-height: 55em;
+  padding: 0;
+}
+.menu.active {
+  max-height: 55em;
+  width: 100%;
+}
+span.has-subnav {
+  display: none;
+  font-size: 1em;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  top: 0;
+  cursor: pointer;
+  width: 52px;
+  text-align: center;
+  height: 100%;
+  line-height: 2.7;
+  border-left: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #f9f9f9;
+  font-size: 20px;
+}
+.navbar-nav { float: none; display: inline-block;}
+.navbar {
+    background: none;
+    border: none;
+    float: left;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.navbar-nav > li {
+    padding: 0px 20px 0px;
+    float: none;
+    position: relative;
+    display: inline-block;
+}
+.navbar-nav > li > a {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 17px 13px 19px;
+    position: relative;
+    color: #ffffff;
+    display: inline-block;
+}
+.navbar-nav > li:first-child { padding-left: 2px;}
+.navbar-nav > li:last-child { padding-right: 0px;}
+.navbar-nav > li > a:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 0%;
+    opacity: 0;
+    height: 2px;
+    background-color: #ffffff;
+}
+.navbar-nav > li:hover > a:before,
+.navbar-nav > li.active > a:before {
+    width: 100%;
+    left: 0px;
+    opacity: 1;
+}
+.navbar-nav li:hover > .autotowing-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+.autotowing-dropdown-menu {
+    background-color: #ffffff;
+    left: 0;
+    margin: 10px 0px 0px 0px;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    width: 240px;
+    z-index: 999;
+    text-align: left;
+}
+.autotowing-dropdown-menu .autotowing-dropdown-menu {
+    left: 100%;
+    top: 0%;
+    margin: 0px 0px 0px 5px;
+}
+.autotowing-dropdown-menu > li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+.autotowing-dropdown-menu li a {
+    border-bottom: 1px solid #f8f8f8;
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 13px 25px;
+    width: 100%;
+}
+.autotowing-dropdown-menu li:hover a,.autotowing-dropdown-menu li > .autotowing-dropdown-menu li:hover a { color: #ffffff;}
+.autotowing-dropdown-menu li > .autotowing-dropdown-menu li a {
+    background-color: #ffffff;
+    color: #232323;
+}
+.autotowing-dropdown-menu > li:last-child > a { border: none; }
+.autotowing-dropdown-menu > li.subdropdown-addicon > a:before {
+    content: "\f107";
+    font-family: FontAwesome;
+    float: right;
+    margin: 0px 0px 0px 0px;
+    color: #999;
+}
+.collapse { display: none; }
+/*autotowing-banner*/
+.autotowing-banner {
+    float: left;
+    width: 100%;
+    margin: -56px 0px 0px;
+    position: relative;
+}
+.banner-transparent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+}
+/*autotowing-banner-caption*/
+.autotowing-banner .col-md-7 { float: right;}
+.autotowing-banner-caption {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 100%;
+    margin: -69px 0px 0px;
+}
+.autotowing-banner-text {
+    float: left;
+    width: 100%;
+}
+.autotowing-banner-text h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    margin: 0px 0px 5px;
+    line-height: 1.4;
+}
+.autotowing-banner-text h2 {
+    margin: 0px 0px 48px;
+    line-height: 0.9;
+    color: #fff;
+    letter-spacing: 0px;
+}
+.autotowing-simple-btn {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 13px 25px 13px 19px;
+    margin: 0px 20px 0px 0px;
+}
+.autotowing-simple-btn:hover {
+    background-color: #ffffff;
+}
+.autotowing-simple-btn i {
+    float: left;
+    margin: 0px 45px 0 0;
+    font-size: 27px;
+    position: relative;
+}
+.autotowing-simple-btn i:after {
+    background-color: #13a7a2;
+    content: "";
+    height: 2px;
+    right: -32px;
+    position: absolute;
+    bottom: 13px;
+    width: 22px;
+}
+.autotowing-simple-btn:hover i:after { background-color: #e6e6e6;}
+.autotowing-banner-caption-two,.autotowing-banner-caption-three { text-align: center;}
+.autotowing-banner-caption-two .autotowing-banner-text h1 {
+    font-size: 80px;
+    margin: 0px 0px 7px;
+    letter-spacing: -0.6px;
+}
+.autotowing-banner-caption-two .autotowing-banner-text h2 { font-size: 20px;}
+.autotowing-banner-caption.autotowing-banner-caption-two { margin: -105px 0px 0px;}
+.autotowing-banner-caption.autotowing-banner-caption-three { margin: -99px 0px 0px;}
+.autotowing-banner-caption-three .autotowing-banner-text h2 {
+    font-size: 35px;
+    display: inline-block;
+    font-weight: normal;
+    margin: 0px 0px 4px;
+    position: relative;
+}
+.autotowing-banner-caption-three .autotowing-banner-text h2:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    width: 80px;
+    height: 2px;
+}
+.autotowing-banner-caption-three .autotowing-banner-text h1 { font-size: 60px;}
+.autotowing-banner-caption-heading {
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0px 0px 19px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+/*Content*/
+.autotowing-main-content-padding { padding-bottom: 0px;}
+.autotowing-services {
+    float: left;
+    width: 100%;
+}
+.autotowing-services-grid {
+    text-align: center;
+    margin: 0px 0px 34px;
+}
+.autotowing-services > ul > li {
+    list-style: none;
+    margin: 0px -4px 40px 0px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.autotowing-services-grid i {
+    font-size: 57px;
+    margin: 0px 0px 12px;
+    display: inline-block;
+}
+.autotowing-services-grid h5 {
+    font-weight: bold;
+    margin: 0px 0px 13px;
+    text-transform: uppercase;
+}
+.autotowing-services-grid p {
+    margin: 0px;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+}
+.autotowing-services-grid p span { font-weight: bold;}
+/*autotowing-promo-box-wrap*/
+.autotowing-promo-box-wrap,.autotowing-promo-box-towing,.autotowing-promo-box-wrap figure,
+.autotowing-promo-box-wrap figure > a,.autotowing-promo-box-wrap figure a img {
+    float: left;
+    width: 100%;
+}
+.autotowing-promo-box-wrap ul { margin: 0px -12px;}
+.autotowing-promo-box-wrap ul li {
+    list-style: none;
+    float: left;
+    width: 50%;
+    padding: 0px 12px;
+    margin: 0px 0px 50px;
+}
+.autotowing-promo-box-wrap figure { margin: 0px;}
+.autotowing-promo-box-wrap figure > a { position: relative;}
+.autotowing-promo-box-wrap figure > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+}
+.autotowing-promo-box-wrap ul li:hover figure > a:before {
+    background-color: #1bbab5;
+}
+.autotowing-promo-box-wrap figure figcaption {
+    width: 100%;
+    padding: 38px 36px 0px 46px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.autotowing-promo-box-wrap figure figcaption h2 {
+    margin: 0px 0px 20px;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 1;
+}
+.autotowing-promo-box-wrap figure figcaption h2 a { color: #ffffff;}
+.autotowing-promo-box-wrap figure figcaption h2:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #fff;
+    height: 2px;
+    width: 145px;
+}
+.autotowing-promo-box-wrap figure figcaption p {
+    margin: 0px;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    float: left;
+    width: 86%;
+    color: #ffffff;
+}
+.autotowing-promo-box-btn {
+    float: right;
+    font-size: 65px;
+    color: #ffffff;
+    position: relative;
+    margin: -17px 0px 0px;
+}
+.autotowing-vehicle-text .autotowing-fancy-title { margin: 0px 0px 27px;}
+/*autotowing-fancy-title*/
+.autotowing-fancy-title {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px 83px;
+}
+.autotowing-fancy-title span {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    display: inline-block;
+    line-height: 0.8;
+}
+.autotowing-fancy-title h2 {
+    font-size: 54px;
+    margin: 0px;
+    letter-spacing: 0px;
+    line-height: 1;
+}
+/*autotowing-vehicle-text*/
+.autotowing-vehicle-text {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px 71px;
+}
+.autotowing-vehicle-text p {
+    margin: 0px 0px 23px;
+    font-size: 15px;
+    line-height: 26px;
+    display: inline-block;
+    width: 83%;
+    letter-spacing: 0px;
+}
+.autotowing-vehicle-list {
+    float: left;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+.autotowing-vehicle-list li {
+    list-style: none;
+    float: left;
+    width: 25%;
+    font-size: 15px;
+    margin: 0px 0px 2px;
+}
+.autotowing-vehicle-list li a {
+    text-align: left;
+    display: inline-block;
+    width: 57%;
+}
+.autotowing-vehicle-list li i {
+    margin: 0px 11px 0px 0px;
+    font-size: 13px;
+}
+/*autotowing-vehicle-slide*/
+.autotowing-vehicle-slide,.autotowing-vehicle-slide-text figure,.autotowing-vehicle-slide-text figure a,
+.autotowing-vehicle-slide-text figure a img {
+    float: left;
+    width: 100%;
+}
+.autotowing-vehicle-slide { position: relative;}
+.autotowing-vehicle-slide-layer {
+    float: left;
+    width: 20%;
+}
+.autotowing-vehicle-slide-text figure {
+    margin: 0px;
+    overflow: hidden;
+}
+.autotowing-vehicle-slide-text figure figcaption {
+    position: absolute;
+    left: 0px;
+    bottom: -100%;
+    width: 100%;
+    background: rgba(27,186,181,0.9);
+    padding: 24px 37px 17px;
+}
+.autotowing-vehicle-slide-layer:hover figure figcaption { bottom: 0px;}
+.autotowing-vehicle-slide-text figure figcaption:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -7px;
+    width: 100%;
+    height: 4px;
+}
+.autotowing-vehicle-slide-text figure figcaption h5 {
+    font-weight: bold;
+    margin: 0px;
+    display: inline-block;
+    letter-spacing: 0px;
+}
+.autotowing-vehicle-slide-text figure figcaption h5 a { color: #ffffff;}
+.autotowing-vehicle-slide-text figure figcaption p {
+    margin: 0px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    display: inline-block;
+    color: #ffffff;
+    line-height: 22px;
+}
+.autotowing-vehicle-slide .slick-arrow {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 72px;
+    height: 85px;
+    background: rgba(27,186,181,0.6);
+    text-align: center;
+    padding: 13px 0px 0px;
+    margin: -42px 0px 0px;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 39px;
+    color: #ffffff;
+}
+.autotowing-vehicle-slide .slick-arrow-left.slick-arrow { right: auto; left: 0px;}
+/*autotowing-services-list*/
+.autotowing-services.autotowing-services-list { padding-right: 47px;}
+.autotowing-services-heading {
+    float: left;
+    width: 100%;
+}
+.autotowing-services.autotowing-services-list > ul > li:last-child { margin: 0px;}
+.autotowing-services.autotowing-services-list ul li {
+    float: left;
+    margin: 0px 0px 79px;
+}
+.autotowing-services-heading {
+    font-size: 54px;
+    margin: 48px 0px 52px;
+    letter-spacing: 0px;
+}
+.autotowing-services-list a {
+    float: left;
+    margin: 0px;
+    font-size: 26px;
+    border: 3px solid;
+    border-radius: 100%;
+    width: 78px;
+    height: 78px;
+    text-align: center;
+    padding: 21px 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+.autotowing-services-list a i.autotowing-cellphone { font-size: 31px;}
+.autotowing-services-list a span {
+    position: absolute;
+    right: -9px;
+    top: -12px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 100%;
+    padding: 1px 0px 0px;
+}
+.autotowing-services-list a ~ .autotowing-services-list-text { padding: 14px 0px 0px 103px;}
+.autotowing-services-list-text { position: relative;}
+.autotowing-services-list a:after {
+    content: '';
+    position: absolute;
+    left: 35px;
+    bottom: -70px;
+    width: 2px;
+    height: 56px;
+    background: url(images/services-list-border.png);
+}
+.autotowing-services-list ul li:last-child a:after { content: none;}
+.autotowing-services-list ul li:hover a { color: #ffffff;}
+.autotowing-services-list-text h5 {
+    font-weight: bold;
+    margin: 0px 0px 3px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+.autotowing-services-list-text p {
+    margin: 0px;
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+/*services-thumb*/
+.autotowing-services-thumb {
+    float: left;
+    width: 100%;
+    margin: 0px;
+}
+.autotowing-services-thumb figcaption {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    margin: -10px 0px 0px;
+}
+.autotowing-services-thumb figcaption a {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.autotowing-services-thumb figcaption a i { margin: 0px 10px 0px 0px;}
+/*Testimonial*/
+.autotowing-fancy-title.autotowing-testimonial-heading { margin: 0px 0px 52px;}
+.autotowing-testimonial figure img,.autotowing-testimonial-wrap,.autotowing-testimonial {
+    float: left;
+    width: 100%;
+}
+.autotowing-testimonial-wrap {
+    padding: 0px 29px;
+    position: relative;
+}
+.autotowing-testimonial-layer {
+    float: left;
+    padding: 0px 16px;
+    width: 50%;
+}
+.autotowing-testimonial {
+    background-color: #ffffff;
+    padding: 37px 30px 33px 42px;
+}
+.autotowing-testimonial figure {
+    float: left;
+    width: 98px;
+    margin: 0px 0px 21px;
+}
+.autotowing-testimonial figure ~ .autotowing-testimonial-text { padding: 3px 0px 0px 121px;}
+.autotowing-testimonial-text h5 {
+    margin: 0px 0px 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.autotowing-testimonial-text span {
+    font-size: 15px;
+    display: block;
+    margin: 0px 0px 8px;
+}
+.autotowing-testimonial-text .star-rating { width: 31%;}
+.autotowing-testimonial-text .star-rating:before,.autotowing-testimonial-text .star-rating-box:before {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.autotowing-testimonial p {
+    float: left;
+    margin: 0px;
+    color: #232323;
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-style: italic;
+}
+.autotowing-testimonial-wrap .slick-arrow {
+    position: absolute;
+    right: 14px;
+    bottom: -28px;
+    font-size: 31px;
+    color: #ffffff;
+    width: 57px;
+    height: 57px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 6px 0px 0px;
+    z-index: 1;
+    cursor: pointer;
+}
+.autotowing-testimonial-wrap .slick-arrow-left.slick-arrow { right: auto; left: 14px;}
+.star-rating {
+    width: 15%;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    position: relative;
+    margin: 0px 0px 16px 0px;
+}
+.star-rating:before,.star-rating-box:before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: FontAwesome;
+    font-size: 13px;
+    left: 0px;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 0px;
+    color: #dfdfdf;
+}
+.star-rating > .star-rating-box {
+    height: 20px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+}
+/*autotowing-twitter-feed*/
+.autotowing-twitter.autotowing-fancy-title h2 { font-size: 30px;}
+.autotowing-twitter.autotowing-fancy-title span { font-size: 16px; }
+.autotowing-twitter.autotowing-fancy-title { margin: 0px 0px 56px;}
+.autotowing-twitter-feed {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px 0px;
+}
+.autotowing-twitter-feed i {
+    font-size: 50px;
+    margin: 0px 0px 29px;
+    display: block;
+}
+.autotowing-twitter-feed p {
+    margin: 0px 0px 13px;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0px;
+    display: inline-block;
+    width: 50%;
+}
+.autotowing-twitter-feed p a { font-weight: bold;}
+.autotowing-twitter-feed time {
+    color: #b0b0b0;
+    display: block;
+    font-size: 15px;
+}
+/*autotowing-blog*/
+.autotowing-blog,.autotowing-blog-medium figure a,.autotowing-blog-medium figure a img {
+    float: left;
+    width: 100%;
+}
+.autotowing-blog > ul > li {
+    list-style: none;
+    margin: 0px -4px 30px 0px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.autotowing-blog-medium { position: relative;}
+.autotowing-blog-medium-layer { margin: 0px 0px 82px;}
+.autotowing-blog-medium figure {
+    float: left;
+    width: 231px;
+    margin: 0px;
+}
+.autotowing-blog-medium figure a { position: relative;}
+.autotowing-blog-medium figure a:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    opacity: 0.8;
+}
+.autotowing-blog-medium figure a i {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    font-size: 30px;
+    color: #fff;
+    margin: -16px 0px 0px -14px;
+    opacity: 0;
+}
+.autotowing-blog-medium ul li:hover figure a i { left: 50%; opacity: 1;}
+.autotowing-blog-medium .autotowing-blog-medium-layer:hover figure a i { left: 50%; opacity: 1;}
+.autotowing-blog-medium .autotowing-blog-medium-layer:hover figure a:before { width: 100%;}
+.autotowing-blog-medium ul li:hover figure a:before { width: 100%;}
+.autotowing-blog-medium figure ~ .autotowing-blog-medium-text {
+    margin: 0px 0px 0px 231px;
+    padding: 0px 0px 0px 33px;
+}
+.autotowing-blog-post-comment {
+    margin: 0px 0px 1px;
+    display: inline-block;
+}
+.autotowing-blog-post-comment li {
+    list-style: none;
+    float: left;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px 29px 0px 0px;
+}
+.autotowing-blog-post-comment li:last-child { margin: 0px;}
+.autotowing-social-tag i {
+    font-size: 11px;
+    float: left;
+    margin: 7px 6px 0px 0px;
+}
+.autotowing-blog-post-comment i {
+    float: left;
+    margin: 5px 8px 0px 0px;
+    font-size: 14px;
+}
+.autotowing-blog-medium-text h2 {
+    font-weight: bold;
+    margin: 0px 0px 18px;
+    line-height: 28px;
+    letter-spacing: -0.1px;
+}
+.autotowing-blog-medium-text p {
+    margin: 0px 0px 16px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+}
+.autotowing-classic-btn {
+    display: inline-block;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    line-height: 1;
+}
+.autotowing-blog-medium .slick-dots { bottom: 0px;}
+.autotowing-blog-medium .slick-dots li button {
+    border-radius: 0px;
+    width: 37px;
+    background-color: #eeeeee;
+    border: none;
+}
+.autotowing-blog-medium .slick-dots li.slick-active button { background-color: #1bbab5;}
+/*Towing Service Coupon*/
+.autotowing-service-coupon {
+    float: left;
+    width: 100%;
+}
+.service-coupon-transparent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.55);
+}
+.autotowing-service-coupon h2 {
+    margin: 0px;
+    float: left;
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 1.7;
+}
+.autotowing-claim-btn {
+    float: right;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 41px 13px;
+    position: relative;
+    overflow: hidden;
+}
+.autotowing-claim-btn:before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: -12%;
+    width: 35px;
+    height: 120%;
+    background: rgba(255,255,255,0.4);
+}
+.autotowing-claim-btn:hover:before { left: 120%;}
+/*autotowing-footer-services*/
+.autotowing-footer-services,.autotowing-footer-services-text,.autotowing-footer-services-wrap {
+    float: left;
+    width: 100%;
+}
+.autotowing-footer-services ul li {
+    list-style: none;
+    margin: 0px -4px 0px 0px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 28px 0px 30px;
+}
+.autotowing-footer-services ul li:before {
+    content: '';
+    position: absolute;
+    right: 43px;
+    top: 0px;
+    width: 1px;
+    height: 100%;
+    background-color: #ffffff;
+}
+.autotowing-footer-services ul li:last-child:before { content: none;}
+.autotowing-footer-services-text i {
+    font-size: 44px;
+    float: left;
+    color: #fff;
+}
+.autotowing-footer-services-text i.autotowing-transport {
+    font-size: 57px;
+    margin: -2px 0px 0px;
+    line-height: 0.8;
+}
+.autotowing-footer-services-text i.autotowing-transport ~ h4 { padding: 0px 0px 0px 80px;}
+.autotowing-footer-services-text i ~ h4 { padding: 5px 0px 0px 62px;}
+.autotowing-footer-services-text h4 {
+    margin: 0px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #fff;
+}
+/*autotowing-footer-widget*/
+.autotowing-footer-one {
+    float: left;
+    width: 100%;
+}
+.autotowing-footer-widget .widget { margin: 0px 0px 33px;}
+.autotowing-footer-one .row { margin: 0px -12px;}
+.autotowing-footer-one .col-md-3.widget { padding: 0px 12px;}
+.autotowing-footer-widget {
+    float: left;
+    width: 100%;
+    padding: 62px 0px 0px;
+}
+.autotowing-footer-title {
+    margin: 0px 0px 25px;
+    padding: 0px 0px 4px 2px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #f2f2f2;
+    letter-spacing: 0px;
+}
+/*widget_contact_us*/
+.widget_contact_us ul,.widget_contact_us ul li {
+    float: left;
+    width: 100%;
+}
+.widget_contact_us ul { margin: 0px 0px 18px;}
+.widget_contact_us ul li {
+    list-style: none;
+    margin: 0px 0px 24px;
+    padding: 0px 0px 0px 19px;
+    font-size: 15px;
+    line-height: 0.7;
+}
+.widget_contact_us ul li i {
+    margin: -1px 13px 0px 0px;
+    font-size: 12px;
+    float: left;
+}
+.widget_contact_us ul.address li i {
+    margin: 4px 13px 0px 0px;
+    font-size: 13px;
+}
+.widget_contact_us ul.address li { margin: 0px 0px 2px;}
+.widget_contact_us ul li i ~ p { padding: 0px 0px 0px 24px;}
+/*widget_services*/
+.widget_services ul li {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 0px 0px 48px;
+    list-style: none;
+    line-height: 0.7;
+    font-size: 15px;
+    position: relative;
+}
+.widget_services ul li i {
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    font-size: 10px;
+}
+.widget_services ul li:first-child i { top: 0px;}
+.widget_services ul li a {
+    font-size: 15px;
+    display: inline-block;
+    width: 100%;
+    padding: 18px 0px 17px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.widget_services ul li:first-child a { padding-top: 0px;}
+.widget_services ul li:last-child a { border-bottom: none;}
+/*widget_appointment*/
+.widget_appointment ul li,.widget_appointment form,.widget_appointment ul li input[type="text"],
+.widget-appointment-select,.widget_appointment ul li textarea {
+    float: left;
+    width: 100%;
+}
+.widget_appointment ul li {
+    list-style: none;
+    margin: 0px 0px 4px;
+}
+.widget_appointment ul li input[type="text"] {
+    background-color: #f3f3f3;
+    height: 39px;
+    padding-left: 19px;
+    color: #929292;
+    font-size: 14px;
+}
+.widget-appointment-select select {
+    background-color: #f3f3f3;
+    height: 39px;
+    font-size: 14px;
+    color: #929292;
+    padding-left: 16px;
+    border: none;
+    font-weight: 500;
+}
+.widget-appointment-select                                     { position: relative;}
+.widget-appointment-select:after {
+    content: "\f0dd";
+    font-family: FontAwesome;
+    font-size: 10px;
+    color: #5c5c5c;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    position: absolute;
+    background-color: #f3f3f3;
+    width: 42px;
+    padding: 3px 4px 0 0;
+    height: 39px;
+    pointer-events: none;
+}
+.widget_appointment ul li textarea {
+    height: 91px;
+    font-size: 14px;
+    color: #333333;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+.widget_appointment ul li input[type="submit"] {
+    float: left;
+    margin: 14px 0px 0px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    border-bottom: 2px solid;
+}
+/*autotowing-footer-copyright*/
+.autotowing-footer-copyright {
+    float: left;
+    text-align: center;
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 23px 0px 24px;
+}
+.autotowing-footer-copyright i { font-size: 12px;}
+.autotowing-footer-copyright p {
+    margin: 0px;
+}
+/*SubHeader*/
+.autotowing-subheader {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("extra-images/subheader-back-image.jpg");
+    position: relative;
+    padding: 62px 0px 0px;
+}
+.autotowing-dark-transparent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.85);
+}
+.autotowing-subheader h1 {
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.autotowing-subheader p {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0px 0px 21px;
+    float: left;
+    width: 34%;
+    letter-spacing: 0px;
+}
+.autotowing-breadcrumb {
+    float: right;
+    position: relative;
+    padding: 7px 0px 12px;
+}
+.autotowing-breadcrumb:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 999em;
+    height: 100%;
+    top: 0px;
+    opacity: 0.9;
+}
+.autotowing-breadcrumb:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 999em;
+    height: 4px;
+    top: -7px;
+    opacity: 0.9;
+}
+.autotowing-breadcrumb ul { position: relative;}
+.autotowing-breadcrumb ul > li {
+    float: left;
+    margin: 0px;
+    color: #ffffff;
+    list-style: none;
+    font-size: 15px;
+    padding: 0px 0px 0px 30px;
+    position: relative;
+}
+.autotowing-breadcrumb ul > li a { color: #ffffff;}
+.autotowing-breadcrumb ul > li:before {
+    content: "\eb2d";
+    font-family: icomoon;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    color: #ffffff;
+    font-size: 10px;
+}
+.autotowing-breadcrumb ul > li:first-child:before { content: none;}
+/*Blog Detail*/
+.autotowing-detail-thumb,.autotowing-thumb-heading {
+    float: left;
+    width: 100%;
+}
+.autotowing-detail-thumb { margin: 0px 0px 20px;}
+.autotowing-thumb-heading {
+    padding: 16px 30px;
+    position: relative;
+    margin: 0px 0px 22px;
+}
+.autotowing-thumb-heading:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+}
+.autotowing-thumb-heading h2 {
+    margin: 0px;
+    color: #ffffff;
+    float: left;
+    font-weight: bold;
+}
+/*autotowing-blog-option*/
+.autotowing-blog-option {
+    float: right;
+    margin: 5px 0px 0px; 
+}
+.autotowing-blog-option li {
+    float: left;
+    color: #ffffff;
+    list-style: none;
+    margin: 0px 0px 0px 29px;
+    position: relative;
+}
+.autotowing-blog-option li:first-child { margin: 0px;}
+.autotowing-blog-option li:before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 12px;
+    height: 8px;
+    width: 1px;
+    background-color: #ffffff;
+    opacity: 0.4;
+}
+.autotowing-blog-option li:first-child:before { content: none;}
+.autotowing-blog-option li a { color: #ffffff;}
+.autotowing-blog-option li a i { margin: 0px 9px 0px 0px;}
+/*autotowing-rich-editor*/
+.autotowing-rich-editor {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 17px;
+}
+.autotowing-rich-editor p {
+    margin: 0px 0px 26px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+blockquote {
+    font-size: 24px;
+    font-style: italic;
+    border: 2px solid #f1f1f1;
+    line-height: 30px;
+    position: relative;
+    float: left;
+    width: 100%;
+    letter-spacing: 0.6px;
+    margin: 0px 0px 22px;
+    padding: 22px 29px 14px 119px;
+}
+blockquote:before {
+    content: "\e923";
+    font-family: icomoon;
+    position: absolute;
+    left: 30px;
+    top: 43px;
+    font-size: 59px;
+    font-style: normal;
+}
+blockquote span {
+    float: right;
+    font-size: 16px;
+    margin: 20px 0px 0px;
+    font-style: normal;
+}
+/*post-tags*/
+.autotowing-post-tags {
+    float: left;
+    width: 100%;
+    border: 2px solid #f1f1f1;
+    padding: 20px 28px 23px;
+    margin: 0px 0px 60px;
+}
+.autotowing-tags {
+    float: left;
+    width: 50%;
+}
+.autotowing-tags span {
+    float: left;
+    font-size: 16px;
+    margin: 0px 13px 0px 0px;
+}
+.autotowing-tags a {
+    float: left;
+    margin: 2px 6px 0px 0px;
+}
+/*blog-social*/
+.autotowing-blog-social {
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+.autotowing-blog-social span {
+    font-size: 16px;
+    color: #222222;
+    margin: 0px 13px 0px 0px;
+}
+.autotowing-blog-social ul { float: right;}
+.autotowing-blog-social ul li {
+    float: left;
+    list-style: none;
+    margin: 2px 0px 0px 10px;
+}
+.autotowing-blog-social ul li:first-child { margin-left: 0px;}
+.autotowing-blog-social ul li a {
+    float: left;
+    margin: 2px 0px 0px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.autotowing-blog-social ul li a.fa-facebook-square { color: #3b5999;}
+.autotowing-blog-social ul li a.fa-twitter-square { color: #00acee;}
+.autotowing-blog-social ul li a.fa-flickr { color: #eb4a89;}
+.autotowing-blog-social ul li a.fa-linkedin-square { color: #0080af;}
+/*prenxt-post*/
+.autotowing-prenxt-post,.autotowing-prenxt-post figure,.autotowing-prenxt-post figure > a,
+.autotowing-prenxt-post figure a img,.autotowing-prev-post,.autotowing-next-post {
+    float: left;
+    width: 100%;
+}
+.autotowing-prenxt-post {
+    padding: 0px 25px;
+    position: relative;
+    margin: 0px 0px 80px;
+}
+.autotowing-prenxt-post ul li {
+    float: left;
+    list-style: none;
+    width: 50%;
+    padding: 0px 15px;
+}
+.autotowing-prenxt-post figure { margin: 0px;}
+.autotowing-prenxt-post figure > a { position: relative;}
+.autotowing-prenxt-post figure > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.autotowing-prenxt-post figure figcaption {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+.autotowing-prev-post figure figcaption { padding: 21px 40px 0px;}
+.autotowing-next-post figure figcaption { padding: 21px 45px 0 20px;}
+.autotowing-prenxt-post figure figcaption a { color: #ffffff;}
+.autotowing-prenxt-post figure figcaption h5 {
+    margin: 0px 0px 1px;
+    float: left;
+    font-weight: bold;
+    letter-spacing: 0px;
+    position: relative;
+}
+.autotowing-prenxt-post figure figcaption h5:before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: 2px;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0;
+}
+.autotowing-prenxt-post ul li:hover figure figcaption h5:before {
+    width: 100%;
+    opacity: 1;
+}
+.autotowing-prenxt-btn {
+    float: left;
+    font-size: 12px;
+    font-style: italic;
+}
+.autotowing-next-post .autotowing-prenxt-btn { float: right;}
+.autotowing-next-btn {
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    font-size: 31px;
+    color: #666666;
+    width: 57px;
+    height: 57px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 12px 0px 0px;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+.autotowing-prev-btn.autotowing-next-btn { right: auto; left: 0px;}
+.autotowing-next-btn:hover { color: #ffffff;}
+/*autotowing-admin-post*/
+.autotowing-admin-post,.autotowing-section-heading,.autotowing-admin-post figure a,.autotowing-admin-post figure a img {
+    float: left;
+    width: 100%;
+}
+.autotowing-admin-post { margin: 0px 0px 54px;}
+.autotowing-section-heading {
+    border-bottom: 2px solid #f2f2f2;
+    margin: 0px 0px 30px;
+    line-height: 0.7;
+    letter-spacing: 0px;
+    padding: 0px 0px 15px;
+}
+.autotowing-admin-post figure {
+    float: left;
+    width: 180px;
+    margin: 0px;
+}
+.autotowing-admin-post figure a img { border-radius: 100%;}
+.autotowing-admin-post figure ~ .autotowing-admin-post-text {
+    margin: -1px 0px 0px 180px;
+    padding: 0px 0px 0px 30px;
+}
+.autotowing-admin-post-text h5 {
+    margin: 0px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.autotowing-admin-post-text { line-height: 1;}
+.autotowing-admin-post-text span {
+    display: inline-block;
+    color: #666666;
+    font-size: 12px;
+    margin: 0px 0px 20px;
+}
+.autotowing-admin-post-text p {
+    margin: 0px 0px 18px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+.autotowing-admin-social {
+    display: inline-block;
+    margin: 0px;
+}
+.autotowing-admin-social li {
+    float: left;
+    list-style: none;
+    margin: 0px 10px 0px 0px;
+}
+.autotowing-admin-social li a {
+    font-size: 18px;
+    color: #bbbbbb;
+}
+.autotowing-admin-social li:hover a.fa-facebook-square { color: #3b5999;}
+.autotowing-admin-social li:hover a.fa-twitter-square { color: #00acee;}
+.autotowing-admin-social li:hover a.fa-flickr { color: #eb4a89;}
+.autotowing-admin-social li:hover a.fa-linkedin-square { color: #0080af;}
+/*autotowing-related-blog-text*/
+.autotowing-related-blog-text,.autotowing-related-blog figure,.autotowing-related-blog figure a,
+.autotowing-related-blog figure a img,.autotowing-related-option {
+    float: left;
+    width: 100%;
+}
+.autotowing-related-blog figure { margin: 0px;}
+.autotowing-related-blog figure a { position: relative;}
+.autotowing-related-blog figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0%;
+    opacity: 0.8;
+}
+.autotowing-related-blog ul li:hover figure a:before { height: 100%;}
+.autotowing-related-blog figure a i {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0px 0px -12px -12px;
+    opacity: 0;
+}
+.autotowing-related-blog ul li:hover figure a i {
+    bottom: 50%;
+    opacity: 1;
+}
+.autotowing-related-blog-text { padding: 23px 0px 0px;}
+.autotowing-related-blog-text h4 {
+    margin: 0px 0px 1px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 0px;
+}
+.autotowing-related-blog-text p {
+    margin: 0px 0px 14px;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+.autotowing-related-option { margin: 0px 0px 5px;}
+.autotowing-related-option li {
+    float: left;
+    list-style: none;
+    margin: 0px 15px 0px 0px;
+    font-style: italic;
+    position: relative;
+    font-size: 12px;
+}
+.autotowing-related-option li:before {
+    content: '/';
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    font-size: 10px;
+}
+.autotowing-related-option li:last-child:before { content: none;}
+.autotowing-related-option li:last-child { margin: 0px;}
+.autotowing-related-option li a,.autotowing-related-option li time { color: #666666;}
+.autotowing-related-option li a i { margin: 0px 6px 0px 0px;}
+/*comment area*/
+.comments-area,.comment-list,.comment-list li,.comment-list > ul > li,.comment-list .thumblist,
+.comment-list li img,.thumb-list,.text-holder {
+    float: left;
+    width: 100%;
+}
+.thumb-list { margin-bottom: 20px;}
+.comment-list .children { 
+    margin: 0px;
+    padding: 0px 0px 0px 41px;
+}
+.comment-list > ul > li {
+    margin: 0px 0px 0px 0px;
+    list-style: none;
+}
+.comment-list .thumblist > ul                      {margin: 0px;}
+.comment-list li                                   {list-style: none;}
+.comment-list li figure {
+    float: left;
+    margin: 0px 0px 22px;
+}
+.comment-list li figure img {
+    border-radius: 100%;
+    float: left;
+    width: 50px;
+}
+.comment-list > li .thumb-list { padding: 0px 30px 18px 0px;}
+.comment-list > li:first-child .thumb-list { border-bottom: 2px solid #f2f2f2;}
+.comment-list li figure img ~ figcaption {
+    margin-left: 50px;
+    padding: 5px 0px 0px 20px;
+    line-height: 1;
+}
+.text-holder p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: inline-block;
+    letter-spacing: -0.3px;
+    line-height: 26px;
+}
+.comment-list li figure figcaption span { font-size: 12px;}
+.comment-list li figure figcaption h5 {
+    line-height: 1.1;
+    margin: 0px 0px 1px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+.text-holder .post-date {
+    float: left;
+    font-size: 12px;
+    line-height: 1;
+    color: #666666;
+    margin: 0px 22px 0px 0px;
+    position: relative; 
+    border-bottom: 1px solid #ffffff;
+}
+.text-holder .post-date:before {
+    content: '';
+    position: absolute;
+    right: -11px;
+    bottom: 3px;
+    width: 2px;
+    height: 2px;
+    background-color: #666666;
+}
+.comment-reply-link {
+    float: left;
+    margin: 0px 22px 0px 0px;
+    font-size: 13px;
+    line-height: 1;
+    position: relative;
+    color: #666666;
+    border-bottom: 1px solid #ffffff;
+}
+.comment-reply-link:before {
+    content: '';
+    position: absolute;
+    right: -11px;
+    bottom: 3px;
+    width: 2px;
+    height: 2px;
+    background-color: #666666;
+}
+.comment-reply-link:last-child:before { content: none;}
+.comment-reply-link i { font-size: 9px; margin: 0px 0px 0px 3px;}
+.comment-list { margin: 0px 0px 20px;}
+/* form*/
+.comment-respond,.autotowing-full-form textarea {
+    float: left;
+    width: 100%;
+}
+.comments-area { margin-top: 24px;}
+.comment-respond { margin: 0px 0px 24px;}
+.comment-respond form { margin: 0px -15px;}
+.comment-respond form p {
+    list-style-type: none;
+    margin-bottom: 16px;
+    padding: 0 15px 0;
+    width: 50%;
+}
+.comment-respond form p input[type="text"],
+.comment-respond form p input[type="email"] {
+    background-color: #f3f3f3;
+    color: #929292;
+    font-size: 14px;
+    float: left;
+    height: 39px;
+    margin: 0;
+    padding-left: 19px;
+    width: 100%;
+}
+.comment-respond form > .autotowing-full-form { float: right;}
+.autotowing-full-form textarea {
+    height: 149px;
+    color: #3c3c3c;
+    font-size: 14px;
+    padding-left: 18px;
+    padding-top: 16px;
+    background-color: #f3f3f3;
+}
+.comment-respond form p input[type="submit"] {
+    float: left;
+    margin: 11px 0px 0px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    border-bottom: 2px solid;
+}
+/*SideBar*/
+.autotowing-main-content .widget {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 48px;
+}
+/*Widget Search*/
+.widget_search form,.widget_search form input[type="search"] {
+    float: left;
+    width: 100%;
+}
+.widget_search form { position: relative;}
+.widget_search form input[type="search"] {
+    background-color: transparent;
+    font-size: 14px;
+    color: #929292;
+    border: 2px solid #f1f1f1;
+    height: 43px;
+    padding-left: 13px;
+    padding-right: 45px;
+}
+.widget_search form label {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+}
+.widget_search form label:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 0px;
+    width: 2px;
+    height: 100%;
+    background-color: #ffffff;
+}
+.widget_search form label:after {
+    content: "\e922";
+    font-family: icomoon;
+    position: absolute;
+    right: 11px;
+    bottom: 50%;
+    margin: 0 0 -14px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.widget_search form input[type="submit"] {
+    width: 45px;
+    border: none;
+    height: 43px;
+}
+/*widget_recent_post*/
+.autotowing-widget-title {
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid #f2f2f2;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 0.8;
+    padding: 0px 0px 11px;
+    margin: 0px 0px 40px;
+}
+.widget_recent_post ul li {
+    float: left;
+    width: 100%;
+    list-style: none;
+    margin: 0px 0px 16px;
+    position: relative;
+    padding: 0px 0px 0px 26px;
+    line-height: 26px;
+}
+.widget_recent_post ul li:last-child { margin: 0px;}
+.widget_recent_post ul li:before {
+    content: "\eb2d";
+    font-family: icomoon;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 10px;
+}
+.widget_recent_post ul li a { font-size: 16px;}
+/*widget_popular_post*/
+.widget_popular_post > ul > li,.widget_popular_post figure a,.widget_popular_post figure a img {
+    float: left;
+    width: 100%;
+}
+.widget_popular_post > ul > li {
+    list-style: none;
+    margin: 0px 0px 30px;
+}
+.widget_popular_post > ul > li:last-child { margin: 0px;}
+.widget_popular_post figure {
+    float: left;
+    width: 50px;
+    margin: 0px;
+}
+.widget_popular_post figure a img { border-radius: 100%;}
+.widget_popular_post figure a { position: relative;}
+.widget_popular_post figure a:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.widget_popular_post figure a:before { left: 0px;}
+.widget_popular_post figure ~ .widget-popular-post-text { padding: 1px 0px 0px 70px;}
+.widget-popular-post-text h6 {
+    margin: 0px;
+    letter-spacing: -0.1px;
+    line-height: 1.4;
+}
+.widget_popular_post .autotowing-blog-option { float: left; margin: 0px;}
+.widget_popular_post .autotowing-blog-option li { font-size: 12px; margin: 0px 12px 0px 0px;}
+.widget_popular_post .autotowing-blog-option li:last-child { margin-right: 0px;}
+.widget_popular_post .autotowing-blog-option li a { color: #666666;}
+.widget_popular_post .autotowing-blog-option li a i { margin: 0px 6px 0px 0px;}
+/*widget_cetagories*/
+.widget_cetagories ul li {
+    float: left;
+    width: 100%;
+}
+.widget_cetagories ul li {
+    list-style: none;
+    line-height: 1;
+    margin: 0px 0px 25px;
+}
+.widget_cetagories ul li:last-child { margin: 0px;}
+.widget_cetagories ul li a {
+    font-size: 16px;
+    display: block;
+    position: relative;
+}
+.widget_cetagories ul li:hover a { padding-left: 18px;}
+.widget_cetagories ul li a:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 16px;
+    opacity: 0;
+}
+.widget_cetagories ul li:hover a:before { opacity: 1;}
+.widget_cetagories ul li a span {
+    float: right;
+    color: #232323;
+}
+/*Calendar Archives*/
+.widget_calendar_archives ul li {
+    float: left;
+    width: 100%;
+}
+.widget_calendar_archives ul li {
+    list-style: none;
+    line-height: 1;
+    margin: 0px 0px 25px;
+}
+.widget_calendar_archives ul li:last-child { margin: 0px;}
+.widget_calendar_archives ul li a {
+    font-size: 16px;
+    display: block;
+    position: relative;
+}
+.widget_calendar_archives ul li:hover a { padding-left: 18px;}
+.widget_calendar_archives ul li a:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 16px;
+    opacity: 0;
+}
+.widget_calendar_archives ul li:hover a:before { opacity: 1;}
+/*widget_gallery*/
+.widget_gallery figure,.widget_gallery figure a,.widget_gallery figure a img {
+    float: left;
+    width: 100%;
+}
+.widget_gallery ul { margin: 0px -10px 0px 0px;}
+.widget_gallery ul li {
+    float: left;
+    list-style: none;
+    width: 33.333%;
+    margin: 0px 0px 10px;
+    padding: 0px 10px 0px 0px;
+}
+.widget_gallery figure { margin: 0px;}
+.widget_gallery figure a {
+    position: relative;
+    overflow: hidden;
+}
+.widget_gallery figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+}
+.widget_gallery ul li:hover figure a:before {
+    opacity: 0.8;
+    width: 100%;
+}
+.widget_gallery figure a i {
+    position: absolute;
+    left: 0%;
+    opacity: 0;
+    top: 50%;
+    margin: -7px 0px 0px -5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+.widget_gallery ul li:hover figure a i {
+    left: 50%;
+    opacity: 1;
+}
+/*Blog Grid*/
+.autotowing-blog-grid figure,.autotowing-blog-grid figure a,.autotowing-blog-grid figure a img,
+.autotowing-blog-grid-wrap,.autotowing-blog-grid-text {
+    float: left;
+    width: 100%;
+}
+.autotowing-blog-grid figure { margin: 0px;}
+.autotowing-blog-grid figure span {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 2px 10px 3px;
+    z-index: 1;
+    border-radius: 3px;
+}
+.one { background-color: #f2215c;}
+.two { background-color: #a2b3bf;}
+.three { background-color: #f28821;}
+.four { background-color: #21f2d7;}
+.five { background-color: #21b0f2;}
+.six { background-color: #a121f2;}
+.seven { background-color: #f29721;}
+.eight { background-color: #e621f2;}
+.autotowing-blog-grid ul li:hover figure span {
+    opacity: 0;
+    right: 0px;
+    top: 0px;
+}
+.autotowing-blog-grid figure a {
+    position: relative;
+    overflow: hidden;
+}
+.autotowing-blog-grid figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0%;
+    opacity: 0.8;
+}
+.autotowing-blog-grid ul li:hover figure a:before { height: 100%;}
+.autotowing-blog-grid figure a i {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0px 0px 9px -12px;
+    opacity: 0;
+}
+.autotowing-blog-grid ul li:hover figure a i {
+    bottom: 50%;
+    opacity: 1;
+}
+.autotowing-blog-grid-wrap {
+    margin: -50px 0px 0px;
+    padding: 0px 19px;
+}
+.autotowing-blog-grid-text {
+    background-color: #ffffff;
+    position: relative;
+    padding: 23px 17px 22px 19px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 2px 0 #cccccc;
+}
+.autotowing-blog-grid-text h4 {
+    margin: 0px 0px 4px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+.autotowing-blog-grid-text p {
+    font-size: 15px;
+    margin: 0px 0px 11px;
+    line-height: 26px;
+    letter-spacing: -0.1px
+}
+.autotowing-blog-grid-text .autotowing-related-option li { font-style: normal;}
+.autotowing-blog-grid-text .autotowing-classic-btn { border-bottom: none;}
+.autotowing-blog-grid ul li:hover .autotowing-classic-btn { border-bottom: 2px solid;}
+.autotowing-blog-grid .autotowing-related-option { margin: 0 0 13px;}
+/*pagination*/
+.autotowing-pagination,.autotowing-pagination > ul {
+    float: left;
+    width: 100%;
+}
+.autotowing-pagination {
+    border-top: 2px solid #f6f6f6;
+    margin: 50px 0 40px;
+    text-align: center;
+    padding: 50px 0px 0px;
+}
+.autotowing-pagination > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 6px 0 0;
+    vertical-align: middle;
+}
+.autotowing-pagination > ul > li > .previous,
+.autotowing-pagination > ul > li > .next {
+    border: none;
+    line-height: 1.5;
+    font-size: 22px;
+    background-color: #f1f1f1;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    padding-top: 9px;
+}
+.autotowing-pagination > ul > li:hover > .previous,.autotowing-pagination > ul > li:hover > .next {
+    color: #ffffff;
+}
+.autotowing-pagination > ul > li > a,.autotowing-pagination > ul > li > span {
+    border: 1px solid #e0e0e0;
+    color: #666666;
+    font-size: 12px;
+    float: left;
+    height: 40px;
+    line-height: 1.4;
+    padding: 10px 8px 6px;
+    width: 40px;
+    border-radius: 100%;
+}
+/*pagination*/
+/*Blog Grid V2*/
+.autotowing-blog-gridtwo figure,.autotowing-blog-gridtwo figure a,.autotowing-blog-gridtwo figure a img,
+.autotowing-blog-gridtwo-text {
+    float: left;
+    width: 100%;
+}
+.autotowing-blog-gridtwo figure { margin: 0px;}
+.autotowing-blog-gridtwo figure span {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 2px 10px 3px;
+    z-index: 1;
+}
+.autotowing-blog-gridtwo ul li:hover figure span { opacity: 0;}
+.autotowing-blog-gridtwo figure a {
+    position: relative;
+    overflow: hidden;
+}
+.autotowing-blog-gridtwo figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0%;
+    opacity: 0.8;
+}
+.autotowing-blog-gridtwo ul li:hover figure a:before { height: 100%;}
+.autotowing-blog-gridtwo figure a i {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0px 0px -16px -12px;
+    opacity: 0;
+}
+.autotowing-blog-gridtwo ul li:hover figure a i {
+    bottom: 50%;
+    opacity: 1;
+}
+.autotowing-blog-gridtwo-text {
+    position: relative;
+    padding: 21px 30px 17px 30px;
+    background-color: #f6f6f6;
+}
+.autotowing-blog-gridtwo-text h4 {
+    margin: 0px 0px 9px;
+    letter-spacing: 0px;
+}
+.autotowing-blog-gridtwo-text p {
+    font-size: 15px;
+    margin: 0px 0px 16px;
+    line-height: 26px;
+    color: #666666;
+    letter-spacing: -0.1px;
+    padding: 0px 0px 18px;
+    border-bottom: 1px solid #dddddd;
+}
+.autotowing-blog-gridtwo-text .autotowing-related-option li {
+    font-style: normal;
+    font-size: 13px;
+    margin: 0px 24px 0px 0px;
+}
+.autotowing-blog-gridtwo-text .autotowing-related-option li:last-child { margin: 0px;}
+.autotowing-blog-gridtwo-text .autotowing-related-option li::before {
+    content: '';
+    width: 2px;
+    right: -13px;
+    height: 10px;
+    top: 11px;
+    background-color: #666666;
+}
+.autotowing-blog-gridtwo-text .autotowing-related-option li:last-child:before { content: none;}
+.autotowing-blog-gridtwo-text .autotowing-classic-btn { border-bottom: none;}
+.autotowing-blog-gridtwo ul li:hover .autotowing-classic-btn { border-bottom: 2px solid;}
+.autotowing-blog-gridtwo .autotowing-related-option { margin: 0 0 8px;}
+.autotowing-gridtwo-social {
+    float: right;
+    margin: 0px;
+}
+.autotowing-gridtwo-social li {
+    float: left;
+    list-style: none;
+    font-size: 12px;
+    margin: 0px 0px 0px 15px;
+}
+.autotowing-gridtwo-social li:first-child { margin: 0px;}
+.autotowing-gridtwo-social li a { color: #bbbbbb;}
+/*Blog Large*/
+.autotowing-blog-large figure,.autotowing-blog-large figure a,.autotowing-blog-large figure a img,
+.autotowing-blog-large-text {
+    float: left;
+    width: 100%;
+}
+.autotowing-blog-large figure { margin: 0px;}
+.autotowing-blog-large figure a {
+    position: relative;
+    overflow: hidden;
+}
+.autotowing-blog-large figure a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.autotowing-blog-large ul li:hover figure a:before { opacity: 0.8;}
+.autotowing-blog-large figure a i {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    color: #ffffff;
+    font-size: 40px;
+    margin: 0px 0px -20px -18px;
+    opacity: 0;
+}
+.autotowing-blog-large ul li:hover figure a i { opacity: 1;}
+.autotowing-blog-large-text .autotowing-related-option li {
+    font-style: normal;
+    font-size: 14px;
+    margin: 0px 29px 0px 0px;
+}
+.autotowing-blog-large-text .autotowing-related-option li i { margin: 0px 6px 0px 0px;}
+.autotowing-blog-large-text .autotowing-related-option li a { color: #232323;}
+.autotowing-blog-large-text .autotowing-related-option li:last-child { margin: 0px;}
+.autotowing-blog-large-text .autotowing-related-option li::before {
+    content: '';
+    width: 1px;
+    right: -15px;
+    height: 10px;
+    top: 11px;
+    background-color: #666666;
+}
+.autotowing-blog-large-text .autotowing-related-option li:last-child:before { content: none;}
+.autotowing-blog-large-text { padding: 20px 0px 0px; line-height: 1;}
+.autotowing-blog-large-text time ~ .autotowing-related-option { float: none; margin: 0px 0px 0px 0px;}
+.autotowing-blog-large-text time {
+    float: left;
+    width: 59px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 26px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 30px 22px 0px;
+    padding: 13px 0px 4px;
+    position: relative;
+}
+.autotowing-blog-large-text time:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.autotowing-blog-large-text time span {
+    font-size: 14px;
+    display: block;
+    font-weight: normal;
+}
+.autotowing-blog-large-text h2 {
+    margin: 7px 0px 0px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+.autotowing-blog-large-text p {
+    font-size: 16px;
+    float: left;
+    margin: 0px 0px 17px;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+/*Gallery View One*/
+.autotowing-gallery,.autotowing-classic-gallery figure,.autotowing-classic-gallery figure > a,.autotowing-classic-gallery figure a img,
+.autotowing-classic-gallery-text {
+    float: left;
+    width: 100%;
+}
+.autotowing-gallery > ul > li {
+    margin: 0px 0px 30px;
+    list-style: none;
+}
+.autotowing-classic-gallery figure { margin: 0px; overflow: hidden;}
+.autotowing-classic-gallery figure figcaption {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.autotowing-classic-gallery figure figcaption:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+}
+.autotowing-classic-gallery ul li:hover figure figcaption:before { opacity: 0.3;}
+.autotowing-classic-gallery-text {
+    background: rgba(27,186,181,0.9);
+    position: relative;
+    padding: 17px 32px 23px;
+}
+.autotowing-classic-gallery-text:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -7px;
+    width: 100%;
+    opacity: 0.9;
+    height: 4px;
+}
+.autotowing-classic-gallery-text h5 a { color: #ffffff;}
+.autotowing-classic-gallery-text h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0px;
+    margin: 0px 0px 3px;
+}
+.autotowing-classic-gallery-text p {
+    margin: 0px;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    opacity: 1;
+}
+.autotowing-gallery-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    font-size: 15px;
+    border: 2px solid;
+    padding: 1px 21px 2px;
+    color: #ffffff;
+    margin: 0px 0px -78px -38px;
+    opacity: 1;
+}
+.autotowing-classic-gallery ul li:hover .autotowing-gallery-btn {
+    opacity: 1;
+    bottom: 50%;
+}
+.autotowing-gallery-filterable {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px 80px;
+    border-bottom: 2px solid #f6f6f6;
+}
+.autotowing-gallery-filterable ul {
+    display: inline-block;
+    margin: 0px 0px 15px;
+}
+.autotowing-gallery-filterable ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 30px 15px;
+}
+.autotowing-gallery-filterable ul li:first-child { margin-left: 0px;}
+.autotowing-gallery-filterable ul li:last-child { margin-right: 0px;}
+.autotowing-gallery-filterable ul li a {
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    padding: 1px 41px 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    border: 2px solid #ececec;
+}
+.autotowing-gallery-filterable ul li a.is-checked { color: #ffffff;}
+/*autotowing-modern-gallery*/
+.autotowing-modern-gallery figure,.autotowing-modern-gallery figure > a,.autotowing-modern-gallery figure a img,
+.autotowing-modern-gallery-wrap,.autotowing-modern-gallery-text {
+    float: left;
+    width: 100%;
+}
+.autotowing-modern-gallery figure { margin: 0px;}
+.autotowing-modern-gallery figure > a { position: relative;}
+.autotowing-modern-gallery figure > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.autotowing-modern-gallery ul li:hover figure > a:before { opacity: 0.8;}
+.autotowing-modern-gallery figure > a i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #ffffff;
+    font-size: 35px;
+    margin: -17px 0px 0px -20px;
+}
+.autotowing-modern-gallery-wrap {
+    padding: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+}
+.autotowing-modern-gallery-text {
+    line-height: 1;
+    padding: 22px 11px;
+}
+.autotowing-modern-gallery-text h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px 0px 2px;
+    letter-spacing: 0px;
+}
+.autotowing-modern-gallery-text span {
+    font-size: 12px;
+    display: inline-block;
+    color: #666;
+}
+
+/*autotowing-masonry-gallery*/
+.autotowing-masonry-gallery figure,.autotowing-masonry-gallery figure > a,.autotowing-masonry-gallery figure a img {
+    float: left;
+    width: 100%;
+}
+.autotowing-gallery.autotowing-masonry-gallery > ul { margin: 0px -12px;}
+.autotowing-gallery.autotowing-masonry-gallery > ul > li { padding: 0px 12px;}
+.autotowing-masonry-gallery figure { margin: 0px;}
+.autotowing-masonry-gallery figure:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+}
+.autotowing-masonry-gallery ul li:hover figure:before { opacity: 0;}
+.autotowing-masonry-gallery figure figcaption {
+    position: absolute;
+    left: 0px;
+    bottom: 0%;
+    width: 100%;
+    margin: 0px 0px 0px;
+    z-index: 2;
+}
+.autotowing-masonry-gallery ul li:hover figure figcaption  {
+    opacity: 0;
+    visibility: hidden;
+}
+.autotowing-masonry-gallery figure figcaption {
+    float: left;
+    width: 100%;
+    line-height: 1;
+    padding: 9px 20px 19px;
+}
+.autotowing-masonry-gallery figure figcaption h5 {
+    margin: 0px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 1.4;
+}
+.autotowing-masonry-gallery figure figcaption h5 a { color: #ffffff;}
+.autotowing-masonry-gallery figure figcaption span {
+    display: inline-block;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 12px;
+}
+.autotowing-masonry-gallery figure > a { position: relative;}
+.autotowing-masonry-gallery figure > a > i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 25px;
+    margin: -27px 0px 0px -30px;
+    z-index: 2;
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 18px 0px 0px;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+.autotowing-masonry-gallery ul li:hover figure > a > i { opacity: 1;}
+.autotowing-masonry-gallery figure > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+.autotowing-masonry-gallery ul li:hover figure > a:before { opacity: 0.6;}
+/*About Us*/
+.autotowing-aboutus-content { padding: 20px 0px 0px;}
+.autotowing-aboutus {
+    float: left;
+    width: 100%;
+    padding-top: 77px;
+}
+.autotowing-aboutus-heading {
+    font-size: 54px;
+    letter-spacing: 0px;
+    margin: 0px 0px 25px;
+    line-height: 1;
+}
+.autotowing-aboutus-heading > span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 1px;
+}
+.autotowing-aboutus p {
+    margin: 0px 0px 25px;
+    letter-spacing: 0px;
+    font-size: 16px;
+    line-height: 26px;
+}
+/*autotowing-about-services*/
+.autotowing-about-services,.autotowing-about-services-text {
+    float: left;
+    width: 100%;
+}
+.autotowing-about-services { margin: 8px 0px 0px;}
+.autotowing-about-services ul { margin: 0px -14px;}
+.autotowing-about-services ul li {
+    list-style: none;
+    margin: 0px -4px 30px 0px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 14px;
+}
+.autotowing-about-services-text {
+    border: 3px solid #f1f1f1;
+    padding: 22px 16px 16px 35px;
+}
+.autotowing-about-services-text i {
+    font-size: 50px;
+    float: left;
+}
+.autotowing-about-services ul li:hover .autotowing-about-services-text i { color: #ffffff;}
+.autotowing-about-services-text i.autotowing-transport {
+    font-size: 57px;
+    margin: -2px 0px 0px;
+    line-height: 0.8;
+}
+.autotowing-about-services-text i.autotowing-computer { font-size: 38px;}
+.autotowing-about-services-text i.autotowing-computer ~ h4 { padding: 5px 0 0 54px;}
+.autotowing-about-services-text i.autotowing-transport ~ h4 { padding: 5px 0 0 73px;}
+.autotowing-about-services-text i ~ h4 { padding: 8px 0px 0px 62px;}
+.autotowing-about-services-text h4 {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+.autotowing-about-services ul li:hover .autotowing-about-services-text h4 { color: #ffffff;}
+.autotowing-about-services-text.padding { padding: 21px 16px 22px 27px;}
+/*autotowing-about-list*/
+.col-md-4.right { float: right;}
+.autotowing-services-list.autotowing-about-list ul { width: 85px;}
+.autotowing-services-list.autotowing-about-list { padding-top: 103px;}
+.autotowing-testimonial-two .autotowing-testimonial { background-color: #f5f5f5;}
+/*Counter*/
+.counter-transparent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+}
+.autotowing-counter,.autotowing-counter-text {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.autotowing-counter > ul > li {
+    float: left;
+    width: 25%;
+    margin: 0px 0px 30px;
+    list-style: none;
+}
+.autotowing-counter-text i {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    font-size: 45px;
+    border-radius: 100%;
+    padding-top: 20px;
+    border: 3px dashed;
+    margin: 0px 0px 18px;
+}
+.numscroller {
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1;
+    margin: 0px 0px 3px;
+}
+.autotowing-counter-text span {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+}
+/*FAQ*/
+.autotowing-faq-thumb {
+    text-align: center;
+    margin: 3px 0px 0px;
+}
+.autotowing-fancy-title.autotowing-faq-title { text-align: left;}
+.autotowing-accordion,.autotowing-accordion .panel-body > p,.autotowing-faq-thumb {
+    float: left;
+    width: 100%;
+}
+.autotowing-accordion                                                        { margin-bottom: 0px;}
+.autotowing-accordion .panel-heading .panel-title > a {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: -0.1px;
+    padding: 5px 0px 5px 60px;
+}
+.autotowing-accordion .panel + .panel                                         { margin-top: 30px;}
+.autotowing-accordion .panel-heading .panel-title a.collapsed:before,
+.autotowing-accordion .panel-heading .panel-title a:before {
+    position: absolute;
+    left: 0px;
+    color: #fff;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    content: "\e91b";
+    font-family: icomoon;
+    border: 3px solid;
+    background-color: transparent;
+    line-height: 1.4;
+}
+.autotowing-accordion .panel-heading .panel-title a:before                     { color: #ffffff;}
+.autotowing-accordion .panel-default {
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+}
+.autotowing-accordion .panel-default > .panel-heading {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.autotowing-accordion .panel-body {
+    border: none;
+    padding: 21px 0px 0px;
+}
+.autotowing-accordion .panel-title {
+    color: inherit;
+    margin: 0px;
+}
+.autotowing-accordion .panel-body > p {
+    line-height: 26px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body             { border-top-color: transparent;}
+/*Faq*/
+/*Contact Us*/
+.autotowing-contact-map,.autotowing-contact-info,.autotowing-contact-form,.autotowing-contact-form form,
+.autotowing-contact-form ul li input[type="text"],.autotowing-contact-form ul li textarea {
+    float: left;
+    width: 100%;
+}
+.autotowing-contact-map { margin: 0px 0px 78px;}
+.autotowing-contact-map #map {
+    width: 100%;
+    height: 350px;
+}
+.autotowing-contact-info {
+    margin: 0px 0px 30px;
+    text-align: center;
+}
+.autotowing-contact-info > ul > li {
+    list-style: none;
+    margin: 0px 0px 50px;
+}
+.autotowing-contact-info i {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    font-size: 30px;
+    padding: 14px 0px 0px;
+    border: 3px solid;
+    margin: 0px 0px 12px;
+    position: relative;
+}
+.autotowing-contact-info i.autotowing-interface {
+    font-size: 25px;
+    padding-top: 17px;
+}
+.autotowing-contact-info i.autotowing-technology-12 {
+    font-size: 26px;
+    padding-top: 17px;
+}
+.autotowing-contact-info i:after {
+    content: '';
+    background: url(images/contact-info-shape.png);
+    left: 62px;
+    width: 325px;
+    height: 18px;
+    top: 20px;
+    position: absolute;
+}
+.autotowing-contact-info ul li:last-child i:after { content: none;}
+.autotowing-contact-info ul li:hover i { color: #ffffff;}
+.autotowing-contact-info h5 {
+    margin: 0px 0px 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.autotowing-contact-info p {
+    margin: 0px;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 0px;
+    width: 62%;
+    line-height: 26px;
+}
+.autotowing-contact-info a {
+    font-size: 15px;
+    display: block;
+    line-height: 1.7;
+}
+.autotowing-contact-form { margin: 0px 0px 15px;}
+.autotowing-contact-form ul { margin: 0px -12px;}
+.autotowing-contact-form ul li {
+    float: left;
+    width: 50%;
+    list-style: none;
+    margin: 0px 0px 20px;
+    padding: 0px 12px;
+}
+.autotowing-contact-form ul li.full-form { float: right;}
+.autotowing-contact-form ul li input[type="text"] {
+    background-color: #f3f3f3;
+    height: 39px;
+    padding-left: 19px;
+    font-size: 14px;
+    color: #929292;
+}
+.autotowing-contact-form ul li textarea {
+    height: 157px;
+    background-color: #f3f3f3;
+    color: #353535;
+    font-size: 14px;
+    padding-left: 19px;
+    padding-top: 8px;
+}
+.autotowing-contact-form ul li input[type="submit"] {
+    border: none;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    line-height: 1.1;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*autotowing-contact-info-two*/
+.autotowing-contact-map-two {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 40px;
+}
+.autotowing-contact-map-two #map {
+    width: 100%;
+    height: 350px;
+}
+.autotowing-contact-form.autotowing-contact-form-two { margin: 0px 0px 73px;}
+.autotowing-contact-form.autotowing-contact-form-two ul li.full-form { width: 100%;}
+.autotowing-contact-info-two ul li {
+    list-style: none;
+    margin: 0px 0px 21px 0px;
+}
+.autotowing-contact-info-two i {
+    font-size: 46px;
+    float: left;
+}
+.autotowing-contact-info-two i.autotowing-interface {
+    font-size: 30px;
+    padding-left: 7px;
+}
+.autotowing-contact-info-two i.autotowing-technology-12 {
+    font-size: 31px;
+    padding-left: 7px;
+}
+.autotowing-contact-info-two i ~ .autotowing-contact-info-text {
+    padding-left: 68px;
+    margin: -4px 0px 0px;
+}
+.autotowing-contact-info-text h5 {
+    margin: 0px 0px 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.autotowing-contact-info-text p {
+    margin: 0px;
+    width: 80%;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 22px;
+}
+.autotowing-contact-info-text a {
+    font-size: 15px;
+    display: block;
+    line-height: 1.5;
+}
+.autotowing-contact-info-two i.icon-technology7 { font-size: 32px;}
+.autotowing-contact-info-two i.icon-multimedia3 { font-size: 30px;}
+/*404 Page*/
+.autotowing-error-pagefull {
+    background: url(extra-images/error-page-image.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.autotowing-error-wrap,.autotowing-error-text {
+    float: left;
+    width: 100%;
+}
+.autotowing-error-wrap { position: relative;}
+.autotowing-error-wrap:before {
+    content: '';
+    position: absolute;
+    background-image: url("images/error-icon.png");
+    width: 299px;
+    height: 299px;
+    left: 50%;
+    top: 50%;
+    margin: -169px 0 0 -134px;
+}
+.autotowing-error-text {
+    text-align: center;
+    position: relative;
+    padding: 92px 0px 152px;
+}
+.autotowing-error-text h2 {
+    font-size: 120px;
+    font-weight: bold;
+    margin: 0px;
+    letter-spacing: 0px;
+    line-height: 1;
+}
+.autotowing-error-text h3 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    margin: 0px 0px 29px;
+    line-height: 1;
+}
+.autotowing-error-text p {
+    display: inline-block;
+    margin: 0px 0px 23px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+    width: 61%;
+}
+.autotowing-error-btn {
+    border: 3px solid;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    padding: 7px 24px 9px;
+    border-radius: 4px;
+}
+.autotowing-error-btn:hover { background-color: transparent;}
+.autotowing-accordion.autotowing-faq-accordion { margin: 0px 0px 56px;}
+/*Search Result*/
+.autotowing-searchfull {
+    background-image: url("extra-images/search-reasult-image.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.autotowing-search-text,.autotowing-liststyle-one,.autotowing-liststyle-one li,.autotowing-search-text form,
+.autotowing-search-text form input[type="text"] {
+    float: left;
+    width: 100%;
+}
+.autotowing-search-text h2 {
+    margin: 0px 0px 7px;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.autotowing-search-text p {
+    margin: 0px 0px 24px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+.autotowing-liststyle-one { margin: 0px 0px 29px;}
+.autotowing-liststyle-one li {
+    margin: 0px 0px 3px;
+    list-style: none;
+    padding-left: 24px;
+    font-size: 16px;
+    position: relative;
+}
+.autotowing-liststyle-one li:before {
+    content: "\eb2d";
+    font-family: icomoon;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 10px;
+}
+.autotowing-search-text form { position: relative;}
+.autotowing-search-text form input[type="text"] {
+    background-color: #f3f3f3;
+    height: 40px;
+    font-size: 14px;
+    color: #929292;
+    padding-left: 15px;
+    padding-top: 1px;
+}
+.autotowing-search-text form input[type="submit"] {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 24px 9px;
+    border: none;
+}
+/*Services View 1*/
+.autotowing-service-text,.autotowing-service-thumb,.autotowing-service-thumb > img {
+    float: left;
+    width: 100%;
+}
+.autotowing-service-text h5 {
+    font-weight: bold;
+    margin: 0px 0px 26px;
+    letter-spacing: 0px;
+    line-height: 28px;
+}
+.autotowing-service-text p {
+    margin: 0px 0px 25px;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+.autotowing-modern-btn {
+    float: left;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid;
+    padding: 7px 26px 9px;
+    border-radius: 4px;
+}
+.autotowing-modern-btn:hover { background-color: transparent;}
+.autotowing-service-thumb {
+    margin: 0px;
+    padding-left: 47px;
+}
+.autotowing-service-thumb figcaption {
+    position: absolute;
+    left: 0px;
+    bottom: -27px;
+}
+.autotowing-services-grid.autotowing-services-margin { margin: 0px 0px 32px;}
+/*autotowing-services-form*/
+.autotowing-services-form,.autotowing-services-form form,.autotowing-services-form input[type="text"],
+.autotowing-services-form textarea {
+    float: left;
+    width: 100%;
+}
+.autotowing-services-form ul { margin: 0px -12px;}
+.autotowing-services-form ul li {
+    float: left;
+    width: 50%;
+    padding: 0px 12px;
+    list-style: none;
+    margin: 0px 0px 30px;
+}
+.autotowing-services-form ul li.right-form { float: right;}
+.autotowing-services-form input[type="text"],.autotowing-services-form textarea {
+    background-color: #ffffff;
+    height: 39px;
+    font-size: 14px;
+    padding-left: 19px;
+    color: #929292;
+}
+.autotowing-services-form textarea {
+    height: 177px;
+    padding-top: 8px;
+    color: #525252;
+}
+.autotowing-services-form input[type="submit"] {
+    float: left;
+    border: none;
+    border-bottom: 1px solid;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+    line-height: 1;
+    margin: -3px 0px 0px;
+}
+/*autotowing-services-modern*/
+.autotowing-services-modern i {
+    float: left;
+    font-size: 79px;
+}
+.autotowing-services-modern i ~ .autotowing-services-modern-text {
+    padding-left: 98px;
+    margin: -5px 0px 0px;
+}
+.autotowing-services-modern-text h5 {
+    margin: 0px 0px 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+.autotowing-services-modern-text p {
+    font-size: 16px;
+    margin: 0px;
+    letter-spacing: 0px;
+}
+.services-modern-img {
+    float: left;
+    width: 100%;
+    padding-top: 50px;
+}
+/*Cooming Soon*/
+.autotowing-coomingsoon-content {
+    background-image: url("extra-images/cooming-soon-img.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 0px;
+}
+.coomingsoon-transparent {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(27,186,181,0.4);
+}
+.coomingsoon-transparent:before {
+    content: '';
+    position: absolute;
+    right: 38%;
+    top: 0px;
+    height: 100%;
+    width: 999em;
+}
+.autotowing-coomingsoon,.logo-two,.autotowing-coomingsoon form input[type="email"] {
+    float: left;
+    width: 100%;
+}
+.logo-two { margin: 0px 0px 33px;}
+.autotowing-coomingsoon h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0px 0px 23px;
+    letter-spacing: 0px;
+}
+.autotowing-coomingsoon h2 {
+    font-size: 80px;
+    color: #ffffff;
+    line-height: 1.1;
+    margin: 0px 0px 14px;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+.autotowing-coomingsoon p {
+    margin: 0px 0px 25px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-size: 18px;
+}
+.autotowing-coomingsoon form {
+    float: left;
+    width: 74%;
+    position: relative;
+    margin: 0px 0px 33px;
+}
+.autotowing-coomingsoon form input[type="email"] {
+    background-color: #37c7c3;
+    font-size: 14px;
+    color: #ffffff;
+    padding-left: 15px;
+    height: 40px;
+}
+.autotowing-coomingsoon form input[type="submit"] {
+    padding: 10px 18px 9px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+/*autotowing-countdown*/
+.autotowing-countdown,.autotowing-countdown .countdown-row {
+    float: left;
+    width: 100%;
+}
+.autotowing-countdown { margin: 0px 0px 36px;}
+.autotowing-countdown .countdown-section {
+    float: left;
+    margin: 0px 96px 30px 0px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+.autotowing-countdown .countdown-section:before {
+    content: ':';
+    position: absolute;
+    right: -52px;
+    top: -12px;
+    font-size: 60px;
+}
+.autotowing-countdown .countdown-section:last-child:before { content: none;}
+.autotowing-countdown .countdown-section:last-child { margin: 0px;}
+.autotowing-countdown .countdown-amount {
+    display: block;
+    font-size: 50px;
+    line-height: 0.9;
+    font-weight: bold;
+}
+.autotowing-countdown .countdown-period {
+    font-size: 24px;
+    letter-spacing: 1.8px;
+}
+/*autotowing-coomingsoon-social*/
+.autotowing-coomingsoon-social {
+    float: left;
+    width: 100%;
+}
+.autotowing-coomingsoon-social li {
+    float: left;
+    margin: 0px 20px 0px 0px;
+    list-style: none;
+}
+.autotowing-coomingsoon-social li a {
+    font-size: 16px;
+    color: #ffffff;
+}
+/*autotowing-coomingsoon-copyright*/
+.autotowing-coomingsoon-copyright {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 24px 0px;
+}
+.autotowing-coomingsoon-copyright p {
+    color: #ffffff;
+    letter-spacing: 0px;
+    margin: 0px;
+}
+.autotowing-coomingsoon-copyright p i { font-size: 12px;}
+
+@media (min-width: 1250px) and (max-width: 1700px) {
+  .autotowing-error-pagefull { background-position: -59% bottom;}
+  .autotowing-searchfull { background-position: right -40% bottom;}
+  .autotowing-aboutusfull { background-position: right -25% bottom;}
+
+}
